@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations | Open AI x World AI</title>
+  <meta name="description" content="Explore luxury adventure tourism destinations with premium curated travel cards and editorial design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-destinations">
+
+<nav class="navbar navbar-expand-lg navbar-dark royal-nav sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="index.html">
+      <span class="brand-mark"></span>
+      <span><strong>Open AI x World AI</strong><small>Destinations</small></span>
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav2"><span class="navbar-toggler-icon"></span></button>
+    <div id="nav2" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-2 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="dest-hero">
+  <div class="container">
+    <div class="row align-items-end g-4">
+      <div class="col-lg-7 reveal">
+        <p class="section-kicker">Selected Places</p>
+        <h1 class="page-title">A Royal Map Of Luxury Adventure</h1>
+        <p class="page-text">
+          This page uses a different composition: asymmetrical cards, editorial framing, and destination
+          filters to feel like a luxury magazine spread.
+        </p>
+      </div>
+      <div class="col-lg-5 reveal">
+        <div class="filter-panel">
+          <h2>Filter Trips</h2>
+          <div class="row g-3">
+            <div class="col-12">
+              <select class="form-select">
+                <option>All Styles</option>
+                <option>Adventure</option>
+                <option>Cultural</option>
+                <option>Relaxation</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <select class="form-select">
+                <option>Luxury</option>
+                <option>Premium</option>
+                <option>Elite</option>
+              </select>
+            </div>
+            <div class="col-6 d-grid">
+              <button class="btn btn-emerald">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="destination-grid">
+      <article class="destination-card big reveal">
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80" alt="London">
+        <div class="destination-meta">
+          <span>Elite City</span>
+          <h3>London Royal Route</h3>
+          <p>Architecture, museums, fine dining, and private chauffeur experiences.</p>
+          <a href="booking.html" class="btn btn-light">Explore</a>
+        </div>
+      </article>
+
+      <article class="destination-card reveal">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Ocean">
+        <div class="destination-meta">
+          <span>Beach</span>
+          <h3>Maldives</h3>
+          <p>Private villas, marine calm, premium island life.</p>
+          <a href="booking.html" class="btn btn-light">Explore</a>
+        </div>
+      </article>
+
+      <article class="destination-card reveal">
+        <img src="https://images.unsplash.com/photo-1526155461140-4b3b1f0c8f0e?auto=format&fit=crop&w=1200&q=80" alt="Desert">
+        <div class="destination-meta">
+          <span>Luxury Desert</span>
+          <h3>Dubai</h3>
+          <p>Golden skyline, elite shopping, and iconic experiences.</p>
+          <a href="booking.html" class="btn btn-light">Explore</a>
+        </div>
+      </article>
+
+      <article class="destination-card reveal">
+        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80" alt="Nature">
+        <div class="destination-meta">
+          <span>Adventure</span>
+          <h3>Swiss Alps</h3>
+          <p>Snow, peaks, scenic rail, and private mountain stays.</p>
+          <a href="booking.html" class="btn btn-light">Explore</a>
+        </div>
+      </article>
+
+      <article class="destination-card reveal">
+        <img src="https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?auto=format&fit=crop&w=1200&q=80" alt="Temple">
+        <div class="destination-meta">
+          <span>Cultural</span>
+          <h3>Kyoto</h3>
+          <p>Temples, gardens, tea rituals, and calm luxury routes.</p>
+          <a href="booking.html" class="btn btn-light">Explore</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-royal">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <span>Open AI x World AI</span>
+    <span>Destination Architecture Page</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

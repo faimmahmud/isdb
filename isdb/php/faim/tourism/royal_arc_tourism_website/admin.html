@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard — Royal Arc Tourism</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body class="page-admin">
+  <div class="texture top"></div>
+  <div class="texture bottom"></div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">RA</span>
+        <span>
+          <strong>Royal Arc Tourism</strong>
+          <small>Admin Panel</small>
+        </span>
+      </a>
+      <button class="menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">☰</button>
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../destinations.html">Destinations</a>
+        <a href="../packages.html">Packages</a>
+        <a href="../gallery.html">Gallery</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../user/dashboard.html" class="pill">User</a>
+        <a href="dashboard.html" class="pill gold">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero reveal">
+      <span class="badge">Admin control</span>
+      <h1 style="max-width:12ch">Operate bookings with royal precision.</h1>
+      <p class="hero-copy">
+        This dashboard is more structured and operational, designed to feel like a control center for a premium travel brand.
+      </p>
+    </section>
+
+    <section class="section reveal">
+      <div class="dashboard-grid">
+        <div class="kpi span-3 surface">
+          <strong>128</strong>
+          <p>New requests</p>
+        </div>
+        <div class="kpi span-3 surface">
+          <strong>2,560</strong>
+          <p>Total users</p>
+        </div>
+        <div class="kpi span-3 surface">
+          <strong>18</strong>
+          <p>Active packages</p>
+        </div>
+        <div class="kpi span-3 surface">
+          <strong>$48.2k</strong>
+          <p>Monthly revenue</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split reveal">
+      <div class="surface rounded-xl card-pad">
+        <span class="badge">Operations</span>
+        <h2 style="margin-top:1rem">Booking performance</h2>
+        <p style="margin-top:.7rem">A calm analytics panel with three strong progress indicators.</p>
+        <div style="margin-top:1.2rem; display:grid; gap:1rem">
+          <div>
+            <p>Approval rate</p>
+            <div class="progress"><span style="width:92%"></span></div>
+          </div>
+          <div>
+            <p>Customer satisfaction</p>
+            <div class="progress"><span style="width:88%"></span></div>
+          </div>
+          <div>
+            <p>Package occupancy</p>
+            <div class="progress"><span style="width:76%"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="surface rounded-xl card-pad">
+        <span class="badge">Recent activity</span>
+        <h2 style="margin-top:1rem">Live control table</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Guest</th>
+              <th>Package</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Elina</td><td>Royal Signature</td><td>Approved</td></tr>
+            <tr><td>Ahmed</td><td>Grand Weekend</td><td>Pending</td></tr>
+            <tr><td>Sara</td><td>Palace Privilege</td><td>Confirmed</td></tr>
+            <tr><td>Rafi</td><td>Golden Coast Grand</td><td>Review</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>Admin panel architecture.</p></footer>
+  <script src="../assets/script.js"></script>
+</body>
+</html>
