@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constractor</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        function Car(name,model){
+            this.name=name;
+            this.model=model;
+            this.speed=function(){
+                document.write( "</br>" +this.name + "</br>" +  this.model)
+            }
+        }
+
+        let newCar=new Car ("BMW" , "M4");
+        document.write(newCar.model + " " + newCar.name)
+        newCar.speed();
+    </script>
+    
+</body>
+</html>

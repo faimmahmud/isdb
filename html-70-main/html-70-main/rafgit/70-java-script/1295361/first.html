@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime-number</title>
+</head>
+<body>
+
+    <script>
+
+        let num = Number(prompt("Enter the number : "));
+        let isprime =true ;
+
+        if(num<=1){
+            isprime = false;
+        }else{
+            for(let i=2; i<num; i++){
+                if(num % i == 0){
+                    isprime = false;
+                    break;
+                }
+            }
+        }
+
+
+        if(isprime){
+            document.write("Prime Number")
+        }else{
+            document.write("Not Prime")
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Panel — Royal Arc Tourism</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="texture texture-top"></div>
+  <div class="texture texture-bottom"></div>
+
+  <header class="topbar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">RA</span>
+      <span>
+        <strong>Royal Arc Tourism</strong>
+        <small>Admin Panel</small>
+      </span>
+    </a>
+    <button class="menu-btn" aria-label="Toggle menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../destinations.html">Destinations</a>
+      <a href="../packages.html">Packages</a>
+      <a href="../gallery.html">Gallery</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../user/dashboard.html" class="nav-pill">User Panel</a>
+      <a href="dashboard.html" class="nav-pill dark">Admin Panel</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero reveal">
+      <span class="eyebrow">Admin zone</span>
+      <h1>Control tours, users, and bookings with clarity.</h1>
+      <p>Structured for management with clean analytics, campaign cards, and booking oversight.</p>
+    </section>
+
+    <section class="section reveal">
+      <div class="grid four">
+        <article class="info-card">
+          <h3>Bookings</h3>
+          <p>128 new requests</p>
+        </article>
+        <article class="info-card">
+          <h3>Users</h3>
+          <p>2,560 registered</p>
+        </article>
+        <article class="info-card">
+          <h3>Packages</h3>
+          <p>18 active offers</p>
+        </article>
+        <article class="info-card">
+          <h3>Revenue</h3>
+          <p>$48.2k this month</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="dashboard-panel reveal">
+      <div class="panel-head">
+        <h2>Management Center</h2>
+        <span class="badge">Royal Control</span>
+      </div>
+      <div class="grid two">
+        <div class="panel-box">
+          <h3>Performance</h3>
+          <div class="bar-list">
+            <span><i style="width:92%"></i></span>
+            <span><i style="width:76%"></i></span>
+            <span><i style="width:64%"></i></span>
+          </div>
+        </div>
+        <div class="panel-box">
+          <h3>Today’s tasks</h3>
+          <p>Approve bookings, update tour availability, manage user messages, and publish offers.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Admin experience area.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 70px;
+}
+
+/* Hero Banner */
+.hero {
+  height: 75vh;
+  background: url("images/hero-bg.jpg") center/cover no-repeat;
+  background-size: cover;
+}
+
+.bike-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Cards */
+.card h5 {
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+}

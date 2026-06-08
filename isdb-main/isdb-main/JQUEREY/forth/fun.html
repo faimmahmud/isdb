@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Arena Final Game</title>
+
+<style>
+body{
+    margin:0;
+    overflow:hidden;
+    background:#050914;
+    font-family:Arial;
+}
+
+canvas{
+    display:block;
+}
+
+/* HUD */
+.hud{
+    position:fixed;
+    top:10px;
+    left:10px;
+    color:white;
+    background:rgba(0,0,0,0.3);
+    padding:10px;
+    border-radius:10px;
+    font-size:14px;
+}
+
+#msg{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    color:white;
+    opacity:0.8;
+}
+</style>
+
+</head>
+<body>
+
+<canvas id="c"></canvas>
+
+<div class="hud">
+❤️ HP: <span id="hp">100</span><br>
+⭐ XP: <span id="xp">0</span><br>
+⬆ Level: <span id="lvl">1</span>
+</div>
+
+<div id="msg">Move mouse + click to shoot</div>
+
+<script>
+
+const canvas = document.getElementById("c");
+const ctx = canvas.getContext("2d");
+
+canvas.width = innerWidth;
+canvas.height = innerHeight;
+
+/* PLAYER */
+let player = {
+    x: canvas.width/2,
+    y: canvas.height/2
+};
+
+/* GAME DATA */
+let bullets = [];
+let enemies = [];
+let particles = [];
+
+let hp = 100;
+let xp = 0;
+let level = 1;
+let shake = 0;
+
+/* SPAWN ENEMY */
+function spawnEnemy(boss=false){
+
+    enemies.push({
+        x: Math.random()*canvas.width,
+        y: Math.random()*canvas.height,
+        r: boss ? 40 : 15,
+        speed: boss ? 0.5 : 1 + level*0.1,
+        hp: boss ? 10 : 1,
+        boss: boss
+    });
+}
+
+/* SHOOT */
+addEventListener("click",(e)=>{
+    bullets.push({
+        x: player.x,
+        y: player.y,
+        dx: (e.clientX - player.x)/15,
+        dy: (e.clientY - player.y)/15
+    });
+});
+
+/* MOUSE MOVE */
+addEventListener("mousemove",(e)=>{
+    player.x = e.clientX;
+    player.y = e.clientY;
+});
+
+/* EXPLOSION */
+function explode(x,y){
+    for(let i=0;i<8;i++){
+        particles.push({
+            x,y,
+            dx:(Math.random()-0.5)*4,
+            dy:(Math.random()-0.5)*4,
+            life:30
+        });
+    }
+}
+
+/* GAME LOOP */
+function update(){
+
+    if(shake>0){
+        canvas.style.transform =
+        `translate(${Math.random()*6}px,${Math.random()*6}px)`;
+        shake--;
+    }else{
+        canvas.style.transform = "none";
+    }
+
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    /* PLAYER */
+    ctx.fillStyle="white";
+    ctx.beginPath();
+    ctx.arc(player.x,player.y,10,0,Math.PI*2);
+    ctx.fill();
+
+    /* BULLETS */
+    ctx.fillStyle="yellow";
+    bullets.forEach((b,i)=>{
+        b.x += b.dx;
+        b.y += b.dy;
+
+        ctx.beginPath();
+        ctx.arc(b.x,b.y,4,0,Math.PI*2);
+        ctx.fill();
+    });
+
+    /* ENEMIES */
+    enemies.forEach((e,ei)=>{
+
+        let dx = player.x - e.x;
+        let dy = player.y - e.y;
+        let dist = Math.sqrt(dx*dx + dy*dy);
+
+        e.x += (dx/dist)*e.speed;
+        e.y += (dy/dist)*e.speed;
+
+        ctx.fillStyle = e.boss ? "purple" : "red";
+        ctx.beginPath();
+        ctx.arc(e.x,e.y,e.r,0,Math.PI*2);
+        ctx.fill();
+
+        if(dist < 20){
+            hp -= 0.5;
+            document.getElementById("hp").innerText = Math.floor(hp);
+
+            if(hp <= 0){
+                location.reload();
+            }
+        }
+
+    });
+
+    /* PARTICLES */
+    particles.forEach((p,i)=>{
+        p.x += p.dx;
+        p.y += p.dy;
+        p.life--;
+
+        ctx.fillStyle="orange";
+        ctx.fillRect(p.x,p.y,3,3);
+
+        if(p.life <= 0) particles.splice(i,1);
+    });
+
+    /* COLLISION */
+    bullets.forEach((b,bi)=>{
+        enemies.forEach((e,ei)=>{
+
+            let dx = b.x - e.x;
+            let dy = b.y - e.y;
+            let dist = Math.sqrt(dx*dx + dy*dy);
+
+            if(dist < e.r){
+
+                e.hp--;
+                bullets.splice(bi,1);
+
+                explode(e.x,e.y);
+                shake = 10;
+
+                if(e.hp <= 0){
+
+                    enemies.splice(ei,1);
+
+                    xp += 10;
+                    document.getElementById("xp").innerText = xp;
+
+                    if(xp % 50 === 0){
+                        level++;
+                        document.getElementById("lvl").innerText = level;
+                        spawnEnemy(level % 3 === 0); // boss
+                    }
+                }
+            }
+
+        });
+    });
+
+    requestAnimationFrame(update);
+}
+
+/* ENEMY SPAWN LOOP */
+setInterval(()=>{
+    spawnEnemy();
+},1200);
+
+/* START BOSS INIT */
+spawnEnemy();
+
+/* START GAME */
+update();
+
+</script>
+
+</body>
+</html>

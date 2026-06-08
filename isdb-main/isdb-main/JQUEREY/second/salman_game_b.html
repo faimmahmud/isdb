@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Duel Arena</title>
+
+<style>
+body { margin:0; overflow:hidden; background:#000; }
+canvas { display:block; background:#111; }
+#ui{
+  position:absolute;
+  top:10px;
+  left:10px;
+  color:white;
+  font-family:Arial;
+}
+</style>
+</head>
+<body>
+
+<div id="ui"></div>
+<canvas id="c"></canvas>
+
+<script>
+
+const c = document.getElementById("c");
+const ctx = c.getContext("2d");
+
+c.width = innerWidth;
+c.height = innerHeight;
+
+/* =========================
+   PLAYER + ENEMY
+========================= */
+let player = {
+  x:200, y:200,
+  hp:100,
+  energy:100,
+  cooldown:0
+};
+
+let enemy = {
+  x:500, y:300,
+  hp:100,
+  speed:1.5
+};
+
+let gameOver = false;
+let score = 0;
+
+/* =========================
+   INPUT
+========================= */
+let keys = {};
+
+window.addEventListener("keydown", e=>{
+  keys[e.key] = true;
+
+  // ATTACK
+  if(e.key === " " && player.cooldown === 0 && player.energy > 10){
+    attack();
+  }
+});
+
+window.addEventListener("keyup", e=>{
+  keys[e.key] = false;
+});
+
+/* =========================
+   ATTACK SYSTEM
+========================= */
+function attack(){
+
+  player.cooldown = 20;
+  player.energy -= 20;
+
+  let dx = enemy.x - player.x;
+  let dy = enemy.y - player.y;
+  let dist = Math.hypot(dx,dy);
+
+  if(dist < 80){
+
+    enemy.hp -= 20;
+
+    // knockback
+    enemy.x += dx * 0.2;
+    enemy.y += dy * 0.2;
+  }
+}
+
+/* =========================
+   MOVEMENT
+========================= */
+function move(){
+
+  let speed = 3;
+
+  if(keys["w"]) player.y -= speed;
+  if(keys["s"]) player.y += speed;
+  if(keys["a"]) player.x -= speed;
+  if(keys["d"]) player.x += speed;
+
+  // energy regen
+  if(player.energy < 100) player.energy += 0.3;
+
+  // cooldown
+  if(player.cooldown > 0) player.cooldown--;
+
+}
+
+/* =========================
+   ENEMY AI (CHASE + STRAFE)
+========================= */
+function enemyAI(){
+
+  let dx = player.x - enemy.x;
+  let dy = player.y - enemy.y;
+  let dist = Math.hypot(dx,dy);
+
+  enemy.x += (dx/dist) * enemy.speed;
+  enemy.y += (dy/dist) * enemy.speed;
+
+  // attack player
+  if(dist < 25){
+    player.hp -= 0.5;
+  }
+
+}
+
+/* =========================
+   GAME OVER
+========================= */
+function checkGameOver(){
+
+  if(player.hp <= 0){
+    gameOver = true;
+  }
+
+  if(enemy.hp <= 0){
+    enemy.hp = 100;
+    enemy.x = Math.random()*c.width;
+    enemy.y = Math.random()*c.height;
+    score += 1;
+  }
+
+}
+
+/* =========================
+   DRAW
+========================= */
+function draw(){
+
+  ctx.clearRect(0,0,c.width,c.height);
+
+  // player
+  ctx.fillStyle="cyan";
+  ctx.fillRect(player.x,player.y,20,20);
+
+  // enemy
+  ctx.fillStyle="red";
+  ctx.fillRect(enemy.x,enemy.y,20,20);
+
+}
+
+/* =========================
+   LOOP
+========================= */
+function loop(){
+
+  if(!gameOver){
+    move();
+    enemyAI();
+    checkGameOver();
+  }
+
+  draw();
+
+  document.getElementById("ui").innerHTML = `
+    <h3>⚔️ DUEL ARENA</h3>
+    ❤️ HP: ${player.hp.toFixed(0)}<br>
+    ⚡ Energy: ${player.energy.toFixed(0)}<br>
+    👾 Enemy HP: ${enemy.hp.toFixed(0)}<br>
+    🏆 Score: ${score}<br>
+    ${gameOver ? "<span style='color:red'>💀 YOU LOST</span>" : ""}
+    <br><small>Move WASD | Attack SPACE</small>
+  `;
+
+  requestAnimationFrame(loop);
+}
+
+loop();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student DOM Form</title>
+
+<style>
+
+body{
+    background:black;
+    color:aqua;
+    font-family:Arial;
+}
+
+/* Checkbox Style */
+input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    cursor:pointer;
+    accent-color:aqua;
+    margin-right:6px;
+}
+
+/* Radio Style */
+input[type="radio"]{
+    width:18px;
+    height:18px;
+    cursor:pointer;
+    accent-color:orange;
+    margin-right:6px;
+}
+
+/* Input Style */
+input, textarea, select{
+    padding:6px;
+    margin-top:4px;
+    margin-bottom:8px;
+    width:250px;
+}
+
+/* Button Style */
+input[type="button"], input[type="reset"]{
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+/* Notes hidden */
+#notes{
+    display:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<form name="frm">
+
+<label>Name</label> <br>
+<input type="text" name="name" value="faim"> <br>
+
+<label>Email</label> <br>
+<input type="email" name="email" value="ag@gmail.com"> <br>
+
+<label>Address</label> <br>
+<textarea name="addr">dhaka</textarea> <br>
+
+<label>Course</label> <br>
+<select name="course">
+<option>MBA</option>
+<option>BBA</option>
+<option>CSE</option>
+</select>
+
+<br><br>
+
+<label>Sex</label><br>
+
+<input type="radio" name="sex" value="Male" checked> Male
+<input type="radio" name="sex" value="Female"> Female
+
+<br><br>
+
+<label>Subject</label><br>
+
+<input type="checkbox" name="sub" value="English" checked> English
+<input type="checkbox" name="sub" value="Bengali" checked> Bengali
+<input type="checkbox" name="sub" value="Math"> Math
+
+<br><br>
+
+<!-- Notes -->
+<div id="notes">
+
+<label>Notes</label> <br>
+<textarea name="notes" placeholder="Write notes here..."></textarea>
+
+</div>
+
+<br>
+
+<input type="button" value="Submit" onclick="show()">
+<input type="reset" value="Reset">
+
+</form>
+
+<script>
+
+document.frm.onclick = function(){
+    document.getElementById("notes").style.display="block";
+}
+
+function show(){
+
+name = document.frm.name.value;
+email = document.frm.email.value;
+addr = document.frm.addr.value;
+course = document.frm.course.value;
+notes = document.frm.notes.value;
+
+/* Radio */
+let gender="";
+const sx = document.frm.sex;
+
+for(let i=0;i<sx.length;i++){
+    if(sx[i].checked){
+        gender = sx[i].value;
+    }
+}
+
+/* Checkbox */
+let subject="";
+const sb = document.frm.sub;
+
+for(let i=0;i<sb.length;i++){
+    if(sb[i].checked){
+        subject += sb[i].value + " ";
+    }
+}
+
+/* New Window */
+store = window.open("","","width=400,height=400");
+
+store.document.write("Name : "+name+"<br>");
+store.document.write("Email : "+email+"<br>");
+store.document.write("Address : "+addr+"<br>");
+store.document.write("Course : "+course+"<br>");
+store.document.write("Sex : "+gender+"<br>");
+store.document.write("Subject : "+subject+"<br>");
+store.document.write("Notes : "+notes+"<br>");
+
+}
+
+</script>
+
+</body>
+</html>

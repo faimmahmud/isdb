@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  let a = Number(prompt("Enter first number:"));
+  let b = Number(prompt("Enter second number:"));
+  let c = Number(prompt("Enter third number:"));
+
+  let max;
+
+  if (a >= b && a >= c) {
+    max = a;
+  } 
+  else if (b >= a && b >= c) {
+    max = b;
+  } 
+  else {
+    max = c;
+  }
+
+  document.write("Maximum number is: " + max);
+  
+</script>
+</body>
+</html>

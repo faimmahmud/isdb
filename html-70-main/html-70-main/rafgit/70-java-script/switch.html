@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+
+    <script>
+let a = prompt("enter number");
+
+
+        switch(true){
+            case(a >= 90 && a<=100):
+            document.write("A+");
+            break;
+            case(a >= 80 && a<=89):
+            document.write("A");
+            break;
+            case(a >= 70 && a<=79):
+            document.write("A-");
+            break;
+            case(a >= 60 && a<=69):
+            document.write("B+");
+            break;
+            case(a >= 50 && a<=59):
+            document.write("B");
+            break;
+            case(a >= 0 && a<=49):
+            document.write("F");
+            break;
+            default:
+                document.write("invalid number");
+        }
+
+    </script>
+    
+</body>
+</html>

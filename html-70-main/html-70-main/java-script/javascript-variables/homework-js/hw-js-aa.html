@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Programs</title>
+</head>
+<body>
+
+
+
+<script>
+
+// 1. Smallest, Largest & Sum
+let arr = [4, 5, 8, 68, 79, 1];
+let smallest = arr[0];
+let largest = arr[0];
+let sum = 0;
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < smallest) smallest = arr[i];
+    if (arr[i] > largest) largest = arr[i];
+    sum += arr[i];
+}
+
+
+document.write("Smallest Number: " + smallest + "<br>");
+document.write("Largest Number: " + largest + "<br>");
+document.write("Sum: " + sum + "<br><br>");
+
+
+// 2. Prime Number
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+let number = 17;
+
+
+document.write(number + (isPrime(number) ? " is Prime<br><br>" : " is Not Prime<br><br>"));
+
+
+// 3. Swap Operation
+let a = 10;
+let b = 20;
+let temp = a;
+a = b;
+b = temp;
+
+document.write("After Swap: a = " + a + ", b = " + b + "<br><br>");
+
+
+// Ascending & Descending
+let asc = [...arr].sort((x, y) => x - y);
+let desc = [...arr].sort((x, y) => y - x);
+
+
+
+// 4. Built-in Largest, Smallest & Sum
+let max = Math.max(...arr);
+let min = Math.min(...arr);
+let total = arr.reduce((acc, val) => acc + val, 0);
+
+document.write("Largest: " + max + "<br>");
+document.write("Smallest: " + min + "<br>");
+document.write("Sum: " + total + "<br><br>");
+
+
+// 5. ASCII Pattern
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write("* ");
+    }
+    document.write("<br>");
+}
+document.write("<br>");
+
+
+// 6. Factorial
+function factorial(n) {
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+let num = 5;
+
+document.write("Factorial of " + num + " is " + factorial(num));
+
+</script>
+
+</body>
+</html>

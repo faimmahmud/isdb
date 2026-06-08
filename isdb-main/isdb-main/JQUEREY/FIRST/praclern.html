@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Random Fun</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            transition: 0.4s;
+        }
+
+        .box {
+            width: 250px;
+            height: 120px;
+            margin: 20px auto;
+            background: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.4s;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 id="title">jQuery Random Magic</h2>
+
+    <div class="box">
+        <p id="text">Click buttons 🎯</p>
+    </div>
+
+    <button id="bg">Background</button>
+    <button id="box">Box Color</button>
+    <button id="textColor">Text Color</button>
+    <button id="randomAll">Random All</button>
+
+    <script>
+
+        // random color function
+        function color() {
+            return "rgb(" +
+                Math.floor(Math.random() * 255) + "," +
+                Math.floor(Math.random() * 255) + "," +
+                Math.floor(Math.random() * 255) + ")";
+        }
+
+        // background color
+        $("#bg").click(function () {
+            $("body").css("background", color());
+        });
+
+        // box color
+        $("#box").click(function () {
+            $(".box").css("background", color());
+        });
+
+        // text color
+        $("#textColor").click(function () {
+            $("#text").css("color", color());
+        });
+
+        // random everything
+        $("#randomAll").click(function () {
+            $("body").css("background", color());
+            $(".box").css("background", color());
+            $("#text").css("color", color());
+            $("#title").css("color", color());
+
+            let msg = ["Hello 😎", "Wow 🔥", "Nice 🎨", "Cool ⚡"];
+            $("#text").text(msg[Math.floor(Math.random() * msg.length)]);
+        });
+
+    </script>
+
+</body>
+</html>

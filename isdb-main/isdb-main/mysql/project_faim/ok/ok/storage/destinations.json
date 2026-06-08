@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Maldives Overwater Sanctuaries",
+    "country": "Maldives",
+    "category": "island",
+    "summary": "Private reef villas, glass lagoons, and moonlit dining above the Indian Ocean.",
+    "image": "assets/images/destinations/maldives.webp",
+    "sort_order": 1
+  },
+  {
+    "id": 2,
+    "title": "Swiss Alpine Grand Tour",
+    "country": "Switzerland",
+    "category": "mountain",
+    "summary": "Helicopter transfers, glacier rail journeys, and quiet chalets above blue valleys.",
+    "image": "assets/images/destinations/swiss-alps.webp",
+    "sort_order": 2
+  },
+  {
+    "id": 3,
+    "title": "Dubai Future Coast",
+    "country": "United Arab Emirates",
+    "category": "city",
+    "summary": "A polished skyline escape with desert dinners, yacht lounges, and private shopping.",
+    "image": "assets/images/destinations/dubai.webp",
+    "sort_order": 3
+  },
+  {
+    "id": 4,
+    "title": "Santorini Blue Hour",
+    "country": "Greece",
+    "category": "heritage",
+    "summary": "Cycladic suites, caldera sailing, and a slow golden descent into the Aegean.",
+    "image": "assets/images/destinations/santorini.webp",
+    "sort_order": 4
+  },
+  {
+    "id": 5,
+    "title": "Kyoto Silk Season",
+    "country": "Japan",
+    "category": "heritage",
+    "summary": "Temple gardens, tea rituals, ryokan evenings, and private cultural access.",
+    "image": "assets/images/destinations/kyoto.webp",
+    "sort_order": 5
+  },
+  {
+    "id": 6,
+    "title": "Sahara Starlight Convoy",
+    "country": "Morocco",
+    "category": "desert",
+    "summary": "Cinematic dunes, luxury tented camps, and sunrise drives through copper sand.",
+    "image": "assets/images/destinations/sahara.webp",
+    "sort_order": 6
+  },
+  {
+    "id": 7,
+    "title": "Bali Rainforest Hideaway",
+    "country": "Indonesia",
+    "category": "beach",
+    "summary": "Clifftop pools, rice terrace mornings, and slow island hospitality.",
+    "image": "assets/images/destinations/bali.webp",
+    "sort_order": 7
+  },
+  {
+    "id": 8,
+    "title": "Iceland Aurora Circuit",
+    "country": "Iceland",
+    "category": "adventure",
+    "summary": "Black beaches, ice caves, geothermal retreats, and northern light nights.",
+    "image": "assets/images/destinations/iceland.webp",
+    "sort_order": 8
+  }
+]

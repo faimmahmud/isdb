@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw-3</title>
+</head>
+<body>
+
+
+
+<script>
+let numbers = [4, 5, 8, 68, 79, 1];
+
+let smallest = numbers[0];
+let largest = numbers[0];
+let sum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+
+    if (numbers[i] < smallest) {
+        smallest = numbers[i];
+    }
+
+    if (numbers[i] > largest) {
+        largest = numbers[i];
+    }
+}
+
+document.write("Smallest Number: " + smallest + "<br>");
+document.write("Largest Number: " + largest + "<br>");
+document.write("Sum: " + sum);
+</script>
+
+
+<!-- <script>
+let num = parseInt(prompt("Enter a number:"));
+let isPrime = true;
+
+if (num <= 1) {
+    isPrime = false;
+} else {
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+}
+
+if (isPrime) {
+    document.write(num + " is a Prime Number");
+} else {
+    document.write(num + " is not a Prime Number");
+}
+</script> -->
+
+
+<!-- <script>
+let a = parseInt(prompt("Enter first number:"));
+let b = parseInt(prompt("Enter second number:"));
+
+let temp = a;
+a = b;
+b = temp;
+
+document.write("After Swap <br>");
+document.write("a = " + a + "<br>");
+document.write("b = " + b);
+</script> -->
+
+
+
+<!-- <script>
+let arr = [4, 5, 8, 68, 79, 1];
+
+arr.sort(function(x, y) {
+    return x - y;
+});
+document.write("Ascending Order: " + arr + "<br>");
+
+arr.sort(function(x, y) {
+    return y - x;
+});
+document.write("Descending Order: " + arr);
+</script> -->
+
+
+
+<!-- <script>
+let size = parseInt(prompt("How many numbers?"));
+let arr = [];
+let sum = 0;
+
+for (let i = 0; i < size; i++) {
+    arr[i] = parseInt(prompt("Enter number " + (i + 1)));
+}
+
+let smallest = arr[0];
+let largest = arr[0];
+
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+
+    if (arr[i] < smallest) {
+        smallest = arr[i];
+    }
+
+    if (arr[i] > largest) {
+        largest = arr[i];
+    }
+}
+
+document.write("Smallest: " + smallest + "<br>");
+document.write("Largest: " + largest + "<br>");
+document.write("Sum: " + sum);
+</script> -->
+
+
+
+
+<!-- <script>
+let n = parseInt(prompt("Enter number of rows:"));
+
+for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write("* ");
+    }
+    document.write("<br>");
+}
+</script> -->
+
+
+
+
+
+<!-- <script>
+let num = parseInt(prompt("Enter a number:"));
+let factorial = 1;
+
+for (let i = 1; i <= num; i++) {
+    factorial *= i;
+}
+
+document.write("Factorial of " + num + " is " + factorial);
+</script> -->
+    
+</body>
+</html>

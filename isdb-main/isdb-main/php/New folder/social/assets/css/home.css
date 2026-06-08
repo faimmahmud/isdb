@@ -1,0 +1,206 @@
+body.home-page {
+    --page-background:
+        radial-gradient(circle at 10% 12%, rgba(255, 122, 89, 0.22), transparent 28%),
+        radial-gradient(circle at 86% 8%, rgba(127, 140, 255, 0.18), transparent 22%),
+        radial-gradient(circle at 52% 88%, rgba(79, 209, 197, 0.14), transparent 24%),
+        linear-gradient(135deg, #08101b 0%, #16182a 46%, #22162d 100%);
+}
+
+body.home-page[data-theme="light"] {
+    --page-background:
+        radial-gradient(circle at 10% 10%, rgba(255, 122, 89, 0.14), transparent 28%),
+        radial-gradient(circle at 84% 4%, rgba(127, 140, 255, 0.11), transparent 22%),
+        linear-gradient(135deg, #fff8ef 0%, #f4f2ff 46%, #eef8f8 100%);
+}
+
+.home-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 24px;
+    padding: 34px;
+    border-radius: 40px;
+}
+
+.home-hero__copy {
+    display: grid;
+    gap: 20px;
+    align-content: start;
+}
+
+.hero-actions {
+    margin-top: 4px;
+}
+
+.hero-board {
+    display: grid;
+    gap: 18px;
+}
+
+.hero-board__panel,
+.rotating-note,
+.track-card,
+.preview-card,
+.creator-card {
+    padding: 22px;
+    border-radius: 24px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.hero-board__panel--primary {
+    min-height: 220px;
+    background:
+        radial-gradient(circle at top right, rgba(245, 196, 93, 0.22), transparent 28%),
+        rgba(255, 255, 255, 0.08);
+}
+
+.hero-board__label {
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+}
+
+.hero-board__panel h2 {
+    margin: 0 0 14px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(1.7rem, 3vw, 2.6rem);
+    line-height: 1.02;
+}
+
+.hero-board__panel p,
+.rotating-note strong,
+.track-card p,
+.preview-card p,
+.creator-card p {
+    margin: 0;
+    line-height: 1.8;
+    color: var(--muted-strong);
+}
+
+.hero-board__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.hero-stat {
+    padding: 20px;
+    border-radius: 22px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.hero-stat span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.hero-stat strong {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(1.7rem, 3vw, 2.8rem);
+    line-height: 1;
+}
+
+.rotating-note strong {
+    display: block;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.design-track,
+.preview-band {
+    margin-top: 26px;
+}
+
+.track-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.track-card h3,
+.preview-card h3,
+.creator-card strong {
+    margin: 0 0 12px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.22rem;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.preview-card {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.preview-card__top,
+.preview-card__foot {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+}
+
+.preview-card__media {
+    margin-top: auto;
+    overflow: hidden;
+    border-radius: 18px;
+    min-height: 180px;
+}
+
+.preview-card__media img {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    object-fit: cover;
+}
+
+.creator-strip {
+    display: grid;
+    gap: 20px;
+    margin-top: 26px;
+    padding: 26px;
+    border-radius: 32px;
+}
+
+.creator-strip__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.creator-card span {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--muted);
+}
+
+@media (max-width: 1040px) {
+    .home-hero,
+    .track-grid,
+    .preview-grid,
+    .creator-strip__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .home-hero {
+        padding: 24px;
+    }
+
+    .hero-board__grid {
+        grid-template-columns: 1fr;
+    }
+}

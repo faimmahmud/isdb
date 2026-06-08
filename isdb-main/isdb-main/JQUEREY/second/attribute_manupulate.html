@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Neon City Survival</title>
+<style>
+body { margin:0; overflow:hidden; background:#000; font-family:Arial; }
+#ui { position:absolute; top:10px; left:10px; color:#0ff; z-index:10 }
+canvas { display:block; }
+</style>
+</head>
+<body>
+
+<div id="ui"></div>
+<canvas id="c"></canvas>
+
+<script>
+
+/* =========================
+   🎮 SETUP
+========================= */
+const c=document.getElementById("c");
+const ctx=c.getContext("2d");
+
+c.width=innerWidth;
+c.height=innerHeight;
+
+/* =========================
+   🧠 GAME STATE
+========================= */
+const state = {
+  coins:0,
+  hp:100,
+  wanted:0,
+  mission:"Collect 5 coins"
+};
+
+/* =========================
+   PLAYER
+========================= */
+const player = {
+  x:200,
+  y:200,
+  speed:4
+};
+
+/* =========================
+   ENEMIES (POLICE)
+========================= */
+const cops = [
+  {x:600,y:300,speed:2},
+  {x:800,y:500,speed:2.2}
+];
+
+/* =========================
+   CARS (TRAFFIC)
+========================= */
+const cars = Array.from({length:6}).map(()=>({
+  x:Math.random()*c.width,
+  y:Math.random()*c.height,
+  dx:(Math.random()>0.5?1:-1)*2
+}));
+
+/* =========================
+   COINS
+========================= */
+let coins = Array.from({length:10}).map(()=>({
+  x:Math.random()*c.width,
+  y:Math.random()*c.height
+}));
+
+/* =========================
+   INPUT
+========================= */
+let keys={};
+
+window.addEventListener("keydown",e=>keys[e.key]=true);
+window.addEventListener("keyup",e=>keys[e.key]=false);
+
+/* =========================
+   MOVE PLAYER
+========================= */
+function movePlayer(){
+  if(keys["ArrowUp"])player.y-=player.speed;
+  if(keys["ArrowDown"])player.y+=player.speed;
+  if(keys["ArrowLeft"])player.x-=player.speed;
+  if(keys["ArrowRight"])player.x+=player.speed;
+}
+
+/* =========================
+   AI: COPS
+========================= */
+function updateCops(){
+  cops.forEach(cop=>{
+    let dx = player.x - cop.x;
+    let dy = player.y - cop.y;
+    let d = Math.hypot(dx,dy);
+
+    cop.x += (dx/d)*cop.speed;
+    cop.y += (dy/d)*cop.speed;
+
+    if(d<25){
+      state.hp -= 1;
+      state.wanted = Math.min(5,state.wanted+0.01);
+    }
+  });
+}
+
+/* =========================
+   AI: CARS
+========================= */
+function updateCars(){
+  cars.forEach(car=>{
+    car.x += car.dx;
+
+    if(car.x>c.width) car.x=0;
+    if(car.x<0) car.x=c.width;
+
+    // hit player
+    if(Math.abs(car.x-player.x)<20 && Math.abs(car.y-player.y)<20){
+      state.hp -= 2;
+    }
+  });
+}
+
+/* =========================
+   COINS SYSTEM
+========================= */
+function updateCoins(){
+  coins.forEach((coin,i)=>{
+    if(Math.hypot(player.x-coin.x,player.y-coin.y)<20){
+      coins.splice(i,1);
+      state.coins++;
+    }
+  });
+
+  // mission check
+  if(state.coins>=5){
+    state.mission="Escape City (Reach 10 coins)";
+  }
+}
+
+/* =========================
+   DRAW
+========================= */
+function draw(){
+
+  ctx.clearRect(0,0,c.width,c.height);
+
+  /* PLAYER */
+  ctx.fillStyle="cyan";
+  ctx.fillRect(player.x,player.y,20,20);
+
+  /* COPS */
+  ctx.fillStyle="red";
+  cops.forEach(c=>{
+    ctx.fillRect(c.x,c.y,25,25);
+  });
+
+  /* CARS */
+  ctx.fillStyle="orange";
+  cars.forEach(c=>{
+    ctx.fillRect(c.x,c.y,30,15);
+  });
+
+  /* COINS */
+  ctx.fillStyle="yellow";
+  coins.forEach(c=>{
+    ctx.fillRect(c.x,c.y,10,10);
+  });
+
+}
+
+/* =========================
+   UI
+========================= */
+function ui(){
+  document.getElementById("ui").innerHTML=`
+    <h3>🌆 NEON CITY SURVIVAL</h3>
+    💰 Coins: ${state.coins}<br>
+    ❤️ HP: ${state.hp}<br>
+    🚨 Wanted: ${state.wanted.toFixed(1)}<br>
+    🎯 Mission: ${state.mission}
+  `;
+}
+
+/* =========================
+   GAME OVER
+========================= */
+function checkGameOver(){
+  if(state.hp<=0){
+    document.body.innerHTML=`
+      <h1 style="color:red;text-align:center;margin-top:20%">
+        💀 YOU DIED IN NEON CITY
+      </h1>
+    `;
+  }
+
+  if(state.coins>=10){
+    document.body.innerHTML=`
+      <h1 style="color:lime;text-align:center;margin-top:20%">
+        🏆 YOU ESCAPED NEON CITY
+      </h1>
+    `;
+  }
+}
+
+/* =========================
+   LOOP
+========================= */
+function loop(){
+
+  movePlayer();
+  updateCops();
+  updateCars();
+  updateCoins();
+
+  draw();
+  ui();
+  checkGameOver();
+
+  requestAnimationFrame(loop);
+}
+
+loop();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-titeral</title>
+</head>
+
+<body>
+
+<button onclick="infoText()">rafin</button>
+
+    <script>
+        let car = {
+            model: 100,
+            color: "red",
+            name: "bmw",
+        }
+
+        console.log(car);
+        console.log(typeof car)
+        document.write(car.model + " <br> " + car.name + "<br>" + car.color);
+
+
+        // array 
+
+        let studdent = ["sumi", "liyes"];
+
+        console.log(studdent[1]);
+        document.write(studdent[0])
+
+        let student = ["raffin", "hasan", "niaz", "rfn", "asan", "nz"];
+
+        document.write("</br>");
+
+        document.write(student[3]);
+
+        // function 
+
+        function line_break(){
+            document.write("</br>");
+        }
+
+        line_break();
+
+
+        function infoDetails(){
+            document.write("hellow world");
+        }
+
+        infoDetails();
+
+        function infoText(){
+            alert("hellow world");
+        }
+
+    </script>
+
+</body>
+
+</html>

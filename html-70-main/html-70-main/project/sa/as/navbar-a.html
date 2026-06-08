@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Enfield Bangladesh - Pure Motorcycling</title>
+
+  <link rel="stylesheet" href="./projectroyale.css">
+        <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Our custom styles -->
+    <link rel="stylesheet" href="royalenfielda.css" />
+
+   
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="re-header fixed-top">
+      <div class="container-fluid">
+        <div class="row align-items-center g-0">
+          <!-- Logo (Left) -->
+          <div class="col-6 col-md-2 px-3 py-2">
+            <a
+              class="re-logo d-inline-flex align-items-center"
+              href="https://www.royalenfield.com/bd/en/home/"
+              aria-label="Royal Enfield Home"
+            >
+              <img
+                src="./royal-enfield-seeklogo.png"
+                alt="Royal Enfield"
+                height="28"
+              />
+            </a>
+          </div>
+
+          <!-- Nav (Center) -->
+          <div
+            class="col-6 col-md-8 px-3 py-2 d-flex justify-content-end justify-content-md-center"
+          >
+            <nav class="re-nav" aria-label="Primary navigation">
+              <!-- Hamburger (Mobile) -->
+              <button
+                class="re-hamburger d-md-none"
+                type="button"
+                aria-label="Open menu"
+                aria-controls="reNavWrapper"
+                aria-expanded="false"
+              >
+                <span></span><span></span><span></span>
+              </button>
+
+              <!-- Desktop nav -->
+              <ul class="re-nav-primary d-none d-md-flex" >
+                <li>
+                  <a
+                    class="re-nav-link"
+                    href="./royalmenu.html"
+                    >Motorcycles</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="re-nav-link"
+                    href="https://www.royalenfield.com/bd/en/locate-us"
+                    >Locate us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="re-nav-link"
+                    href="https://www.royalenfield.com/bd/en/after-sales"
+                    >After Sales</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="re-nav-link"
+                    href="https://www.royalenfield.com/bd/en/gma"
+                    >Accessories</a
+                  >
+                </li>
+
+                <li class="dropdown">
+                  <a
+                    class="re-nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Our World
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://www.royalenfield.com/bd/en/our-world"
+                        >Overview</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://tv.royalenfield.com/"
+                        >Royal Enfield TV</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- Mobile slide-in wrapper -->
+              <div
+                id="reNavWrapper"
+                class="re-nav-wrapper"
+                role="dialog"
+                aria-modal="true"
+                aria-label="Mobile navigation"
+              >
+                <div
+                  class="re-nav-header d-flex align-items-center justify-content-between px-3 py-3"
+                >
+                  <span class="re-nav-title">Menu</span>
+                  <button
+                    class="re-nav-close"
+                    type="button"
+                    aria-label="Close menu"
+                  >
+                    ✕
+                  </button>
+                </div>
+
+                <ul class="re-nav-mobile list-unstyled m-0 px-3 pb-3">
+                  <li>
+                    <a
+                      class="re-nav-link re-nav-link--mobile"
+                      href="./z"
+                      >Motorcycles</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="re-nav-link re-nav-link--mobile"
+                      href="https://www.royalenfield.com/bd/en/locate-us"
+                      >Locate us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="re-nav-link re-nav-link--mobile"
+                      href="https://www.royalenfield.com/bd/en/after-sales"
+                      >After Sales</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="re-nav-link re-nav-link--mobile"
+                      href="https://www.royalenfield.com/bd/en/gma"
+                      >Accessories</a
+                    >
+                  </li>
+
+                  <li class="mt-2">
+                    <button
+                      class="re-subtoggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="reOurWorldSub"
+                    >
+                      Our World <span class="re-caret">▾</span>
+                    </button>
+                    <div id="reOurWorldSub" class="re-submenu">
+                      <a
+                        class="re-subitem"
+                        href="https://www.royalenfield.com/bd/en/our-world"
+                        >Overview</a
+                      >
+                      <a class="re-subitem" href="https://tv.royalenfield.com/"
+                        >Royal Enfield TV</a
+                      >
+                    </div>
+                  </li>
+
+                  <hr class="re-divider" />
+
+                  <li>
+                    <button class="re-utility-btn re-login-open" type="button">
+                      Login
+                    </button>
+                  </li>
+                  <li>
+                    <button class="re-utility-btn re-search-open" type="button">
+                      Search
+                    </button>
+                  </li>
+                  <li>
+                    <button class="re-utility-btn re-lang-open" type="button">
+                      Language / Region
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Actions (Right) -->
+          <div
+            class="col-12 col-md-2 px-3 py-2 d-none d-md-flex justify-content-end align-items-center gap-3"
+          >
+            <div class="dropdown">
+              <button
+                class="re-action-link dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Login
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.royalenfield.com/bd/en/users/user-profile"
+                    >My Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.royalenfield.com/bd/en/users/user-profile-edit"
+                    >Edit Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.royalenfield.com/bd/en/home"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <i class="bi bi-search"></i>
+
+            <div class="dropdown">
+              <button
+                class="re-action-icon dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-label="Language"
+              >
+                🌐
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.royalenfield.com/bd/en/home"
+                    >Bangladesh (EN)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.royalenfield.com/in/en/home"
+                    >India (EN)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.royalenfield.com/uk/en/home"
+                    >UK (EN)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="re-backdrop" hidden></div>
+    </header>
+
+    <!-- Search overlay -->
+    <div class="re-search" hidden>
+      <div class="re-search-inner">
+        <div class="re-search-top">
+          <input
+            class="re-search-input"
+            type="search"
+            placeholder="Search for anything"
+          />
+          <button
+            class="re-search-close"
+            type="button"
+            aria-label="Close search"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="re-search-hint">Type and press Enter…</div>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1500">
+          <img
+            src="./through-the-andes-1920x850_1770527026880.jpg"
+            class="d-block w-100"
+            alt="..."
+            
+          />
+          <b>
+            <p>we are here to find your dream with our products</p>
+          </b>
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <img
+            src="./sddefault (1)_1770527067483.jpg"
+            class="d-block w-100"
+            style="height: 600px; object-fit: cover"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Motorcycles Section -->
+    <section class="py-5 bg-black">
+      <div class="container-fluid">
+         <!-- === NEW SECONDARY NAVBAR === -->
+    <nav class="navbar navbar-expand-lg secondary-nav" style="background: #7313e1; border-bottom: 1px solid #222;">
+      <div class="container-fluid px-4" style="background-color: rgb(51, 51, 51);height: 50px;">
+        <div class="d-flex align-items-center gap-4">
+          <span class="text-white fw-bold fs-5">
+            <a href="">
+              <img src="./royal-enfield-seeklogo.png" width="180px" height="30px" alt="">
+            </a>
+          </span>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondaryNavbar" aria-controls="secondaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="secondaryNavbar">
+          <ul class="navbar-nav mx-auto gap-5">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+               <h3><b style="color: #ff0000;">
+                  Our Bikes
+                </b>
+                </h3> 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+                <h4>
+                  <b style="color: rgb(149, 242, 27);">
+                    Best deals
+                  </b>
+                </h4>
+                </a>
+            
+        
+        </div>
+      </div>
+    </nav><br>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img
+                src="./2023 Royal Enfield Classic 350 [Specs_ Features_ Photos](JPG)_1770525204038.jpg" style="width: 100%;"
+                class="card-img-top"
+                alt="Bullet 350"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x260?text=Bullet+350'
+                "
+              />
+              <div class="card-body text-center" >
+                <h5 class="card-title fw-bold" style="color: red; ">Bullet 350</h5>
+                <p class="card-text small"
+                style="color: gainsboro;">
+                  <b>The legend continues — iconic thump, timeless soul.</b>
+                </p>
+                <a
+                  href="https://www.royalenfield.com/bd/en/motorcycles/bullet-350"
+                  class="btn btn-re mt-2"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img
+                src="./Royal Enfield Hunter 350(JPG)_1770525452749.jpg " style="width: 100%;"
+                class="card-img-top" 
+                alt="Classic 350"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x260?text=Classic+350'
+                "
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold" style="color: red;">Classic 350</h5>
+                <p class="card-text small" style="color:white;">
+                <b>  Timeless design meets modern refinement — forever loved.</b>
+                </p>
+                <a
+                  href="https://www.royalenfield.com/bd/en/motorcycles/classic-350"
+                  class="btn btn-re mt-2"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img
+                src="./royal-enfield-meteor-350-691e726b6e067_1770525419785.png" style="width: 100%;"
+                class="card-img-top"
+                alt="Hunter 350"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x260?text=Hunter+350'
+                "
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold" style="color: red;">Hunter 350</h5>
+                <p class="card-text small" style="color: beige;">
+                <b>  Agile streetfighter — young, bold, urban spirit.</b>
+                </p>
+                <a
+                  href="https://www.royalenfield.com/bd/en/motorcycles/hunter-350"
+                  class="btn btn-re mt-2"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img
+                src="./SNQEMPXRCBDKPCXJIN24D4J22M_1770525585557.jpg"
+                class="card-img-top"
+                alt="Meteor 350"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x260?text=Meteor+350'
+                "
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold" style="color: red;">Meteor 350</h5>
+                <p class="card-text small" style="color: mintcream;">
+                  Effortless cruising — comfort for every journey.
+                </p>
+                <a
+                  href="https://www.royalenfield.com/bd/en/motorcycles/meteor-350"
+                  class="btn btn-re mt-2"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+       <!-- === NEW SECONDARY NAVBAR === -->
+    <nav class="navbar navbar-expand-lg secondary-nav" style="background: #7313e1; border-bottom: 1px solid #222;">
+      <div class="container-fluid px-4" style="background-color: rgb(51, 51, 51);height: 50px;">
+        <div class="d-flex align-items-center gap-4">
+          <span class="text-white fw-bold fs-5">
+            <a href="">
+              <img src="./royal-enfield-seeklogo.png" width="180px" height="30px" alt="">
+            </a>
+          </span>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondaryNavbar" aria-controls="secondaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="secondaryNavbar">
+          <ul class="navbar-nav mx-auto gap-5">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+                <b>
+                  Rides
+                </b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Moroccan Odyssey 2026</a>
+            
+        
+        </div>
+      </div>
+    </nav>
+    <br>
+    <!-- === DOWN PICTURE - Full-width Official Hero === -->
+<div class="down-picture">
+  <img src="./153531308_1771564505586.jpg" 
+       class="d-block w-100" 
+       style="height: 85vh; object-fit: cover;" 
+       alt="Royal Enfield Bangladesh">
+
+</div>
+
+        </div> <!-- end of carousel -->
+
+    <!-- === NEW SECONDARY NAVBAR === -->
+    <nav class="navbar navbar-expand-lg secondary-nav" style="background: #7313e1; border-bottom: 1px solid #222;">
+      <div class="container-fluid px-4" style="background-color: rgb(45, 45, 45);height: 50px;">
+        <div class="d-flex align-items-center gap-4">
+          <span class="text-white fw-bold fs-5">
+            <a href="">
+              <img src="./royal-enfield-seeklogo.png" width="180px" height="30px" alt="">
+            </a>
+          </span>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondaryNavbar" aria-controls="secondaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="secondaryNavbar">
+          <ul class="navbar-nav mx-auto gap-5">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Latest Bikes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Rides & Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Apparel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Service</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex gap-3">
+          <a href="#" class="btn btn-outline-danger btn-sm" style="background-color: red; color: antiquewhite;">Book Now</a>
+        
+        </div>
+      </div>
+    </nav>
+    <br>
+
+    <!-- === NEW PICTURE AREA AFTER SECONDARY NAVBAR === -->
+    <div class="full-width-hero position-relative">
+      <img 
+        src="https://images.unsplash.com/photo-1507035896870-6d47a3e3a6ab?auto=format&fit=crop&q=80&w=1920" 
+        class="d-block w-100" 
+        alt="Royal Enfield riding adventure" 
+        style="height: 70vh; object-fit: cover;"
+      ><br>
+      <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+        <video autoplay muted loop controls playsinline>
+  <source src="./5277719-hd_1920_1080_30fps.mp4" type="" style="width: 100%;" />
+</video>
+        <p class="lead mb-4" style="text-shadow: 0 2px 8px rgba(0,0,0,0.7);">
+          Discover the soul of motorcycling
+        </p>
+        
+        <a href="https://www.royalenfield.com/bd/en/motorcycles" class="btn btn-re btn-lg px-5">
+          Explore Motorcycles 
+        </a>
+        
+      </div>
+    </div>
+
+    <!-- Motorcycles Section (original content continues) -->
+
+
+<style>
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Your existing header, carousel, motorcycles section, secondary nav, hero video section remain unchanged -->
+
+  <!-- Footer – now properly Royal Enfield styled -->
+  <footer>
+    <div class="footer-container">
+
+      <!-- First column – Our World with Royal Enfield TV prominent (most authentic placement) -->
+      <div class="footer-column">
+        <h3>Our World</h3>
+        <ul>
+          <li><a href="https://tv.royalenfield.com/" target="_blank">Royal Enfield TV</a></li>
+          <li><a href="https://www.royalenfield.com/bd/en/our-world/since-1901">Since 1901</a></li>
+          <li><a href="https://www.royalenfield.com/bd/en/our-world">Overview</a></li>
+          <li><a href="https://www.royalenfield.com/bd/en/our-world/motoculture">MotoCulture</a></li>
+          <li><a href="#">Wallpapers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Motorcycles</h3>
+        <ul>
+          <li><a href="https://www.royalenfield.com/bd/en/motorcycles/bullet-350">Bullet 350</a></li>
+          <li><a href="https://www.royalenfield.com/bd/en/motorcycles/classic-350">Classic 350</a></li>
+          <li><a href="https://www.royalenfield.com/bd/en/motorcycles/hunter-350">Hunter 350</a></li>
+          <li><a href="https://www.royalenfield.com/bd/en/motorcycles/meteor-350">Meteor 350</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="https://www.royalenfield.com/bd/en/locate-us">Locate Us</a></li>
+          <li><a href="https://www.royalenfield.com/bd/en/after-sales">After Sales</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Service Centres</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">Eicher Motors</a></li>
+          <li><a href="#">Legacy</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/RoyalEnfield" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/royalenfield" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/royalenfield" target="_blank"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        © 2026 Royal Enfield. *T&C apply. Images shown may differ from actual product.
+      </div>
+      <div>
+        <a href="#">Privacy Policy</a>  • 
+        <a href="#">Terms & Conditions</a>  • 
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Your existing JavaScript remains unchanged -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+    
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

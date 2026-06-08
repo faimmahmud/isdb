@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>student details</title>
+
+<style>
+
+
+</style>
+</head>
+
+<body>
+
+<fieldset>
+<legend><h2>Student Details</h2></legend>
+
+<form name="frm">
+
+<label>id</label><br>
+<input type="number" name="id"><br>
+
+<label>first name</label><br>
+<input type="text" name="fn"><br>
+
+<label>last name</label><br>
+<input type="text" name="ln"><br>
+
+<label>full name</label><br>
+<input type="text" name="fuln"><br>
+
+<label>email</label><br>
+<input type="email" name="eml"><br>
+
+<label>phone number</label><br>
+<input type="number" name="nmbr"><br>
+
+<label>address</label><br>
+<textarea name="add"></textarea>
+
+<br>
+
+<select name="qualification">
+<option value="BSC">BSC</option>
+<option value="MBA">MBA</option>
+<option value="MSC">MSC</option>
+</select>
+
+<br><br>
+
+<!-- Checkbox -->
+<input type="checkbox" name="dg" value="SSC"> SSC
+<input type="checkbox" name="dg" value="HSC"> HSC
+<input type="checkbox" name="dg" value="BSC"> BSC
+
+<br><br>
+
+<!-- Radio -->
+<input type="radio" name="gndr" value="Male"> Male
+<input type="radio" name="gndr" value="Female"> Female
+<input type="radio" name="gndr" value="Other"> Other
+
+<br><br>
+
+<input type="button" value="submit" onclick="show()">
+<input type="reset" value="reset">
+
+</form>
+</fieldset>
+
+<script>
+
+function show(){
+
+let id = document.frm.id.value;
+let fn = document.frm.fn.value;
+let ln = document.frm.ln.value;
+let fuln = document.frm.fuln.value;
+let email = document.frm.eml.value;
+let phone = document.frm.nmbr.value;
+let addr = document.frm.add.value;
+let qualification = document.frm.qualification.value;
+
+
+/* Checkbox */
+
+
+
+
+let degreey = ("");
+let fa = document.frm.dg;
+for(let i = 0; i > fa.length; i++);{
+    if (fa[i].checked);
+    {
+    degreey += fa[i].value + " ";
+}
+}
+
+
+/* Radio */
+
+let gender = "hf";
+let gndr = document.frm.gndr;
+let selected = false;
+
+for(let i=0;i<gndr.length;i++){
+    if(gndr[i].checked){
+        gender = gndr[i].value;
+        selected = true;
+    }
+}
+
+if(!selected){
+    alert("Please select gender");
+    return;
+}
+
+// moin  update code radio
+
+const gender 
+
+
+/* New Window */
+
+let store = window.open("","","width=500,height=500");
+
+store.document.write("ID : "+id+"<br>");
+store.document.write("First Name : "+fn+"<br>");
+store.document.write("Last Name : "+ln+"<br>");
+store.document.write("Full Name : "+fuln+"<br>");
+store.document.write("Email : "+email+"<br>");
+store.document.write("Phone : "+phone+"<br>");
+store.document.write("Address : "+addr+"<br>");
+store.document.write("Qualification : "+qualification+"<br>");
+store.document.write("Degree : "+degree+"<br>");
+store.document.write("Gender : "+gender+"<br><br>");
+
+store.document.write("<button onclick='window.close()'>Close</button> ");
+store.document.write("<button onclick='window.print()'>Print</button>");
+
+}
+
+</script>
+
+</body>
+</html>

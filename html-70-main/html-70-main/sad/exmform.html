@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend style="text-align: center;">
+           <h2>Student Information</h2>
+        </legend>
+        <form name="form">
+            <label>Name</label><br>
+            <input type="text" name="name"><br><br>
+
+            <label>E-mail</label><br>
+            <input type="text" name="eml"><br><br>
+
+            <label>Password</label><br>
+            <input type="password" name="pass"><br><br>
+            
+            <label>Location</label><br>
+            <select name="loc">
+                <option value="dhaka">dhaka</option>
+                <option value="kushtia">kushtia</option>
+            </select><br><br>
+
+            <label>Gender</label><br>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+<br><br>
+            <label >Subjects</label>
+            <input type="checkbox" name="cb" value="html">Html
+            <input type="checkbox" name="cb" value="java">JavaScript
+            <br><br>
+
+            <input type="button" value="submit" onclick="show()">
+            <input type="reset" value="reset">
+        </form>
+    </fieldset>
+
+    <script>
+        function show(){ 
+            let name = document.forms["form"]["name"].value;
+            let eml = document.forms["form"]["eml"].value;
+            let pass = document.forms["form"]["pass"].value;
+            let loc = document.forms["form"]["loc"].value;
+
+            if (name == ''){
+                alert ('enter name first')
+                return false;
+            }
+
+            if (eml == ''){
+                alert ("enter email first")
+                return false;
+            }
+
+            if (eml.indexOf('@') == -1 || eml.indexOf('.') == -1){
+                alert ("invalid email")
+                return false;
+            }
+
+            if (pass == ''){
+                alert ('enter passwoed first')
+                return false;
+            }
+
+            if (pass.length < 4 || pass.length > 8){ 
+                alert ('pass between 4-8')
+                return false;
+            }
+
+            const gender = document.querySelector('input[name="gender"]:checked')?.value ?? 'not selected';
+            const newcb = document.querySelectorAll('input[name="cb"]:checked')?.value ??'html,java' 
+            let win = window.document.open("","","width=500,height=600");
+            win.document.write(`
+            <P> name: ${name}</P>
+            <P> email: ${eml}</P>
+            <P> password: ${pass}</P>
+            <P> location: ${loc}</P>
+            <P> gender: ${gender}</P>
+            <P> subjects: ${newcb}</P>
+            `)
+            
+        }
+    </script>
+</body>
+</html>

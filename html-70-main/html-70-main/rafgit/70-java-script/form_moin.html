@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Form</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.form-container{
+    width:400px;
+    margin:50px auto;
+    padding:50px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+}
+
+input, textarea{
+    width:100%;
+    padding:8px;
+    margin:5px 0 15px 0;
+}
+
+.gender, .education{
+    margin-bottom:15px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.submit-btn{
+    background:green;
+    color:white;
+}
+
+.reset-btn{
+    background:red;
+    color:white;
+}
+.style-text{
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #00bcd4;
+    font-weight: 600;
+}
+</style>
+
+</head>
+<body>
+
+<div class="form-container">
+
+<h2>Student Form</h2>
+
+<form>
+
+<label>Name</label>
+<input type="text" name="name">
+
+<label>ID</label>
+<input type="number" name="id">
+
+<label>Email</label>
+<input type="email" name="email">
+
+<label>Address</label>
+<textarea name="address"></textarea>
+
+<label>Gender</label><br>
+<span class="style-text">
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+</span>
+
+<br><br>
+
+<label>Education</label><br>
+<span class="style-text">
+<input type="checkbox" name="edu" value="ssc"> SSC
+<input type="checkbox" name="edu" value="hsc"> HSC
+<input type="checkbox" name="edu" value="bsc"> BSC
+</span>
+
+<button type="submit" class="submit-btn">Submit</button>
+<button type="reset" class="reset-btn">Reset</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

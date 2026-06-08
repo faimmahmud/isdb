@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+      1//  Smallest Number, Largest Number & Sum of Array
+
+    let arr = [4, 5, 8, 68, 79, 1];
+
+let smallest = arr[0];
+let largest = arr[0];
+let sum = 0;
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < smallest) {
+        smallest = arr[i];
+    }
+    if (arr[i] > largest) {
+        largest = arr[i];
+    }
+    sum += arr[i];
+}
+
+console.log("Smallest:", smallest);
+console.log("Largest:", largest);
+console.log("Sum:", sum);
+
+2// Prime Number
+
+// function isPrime(num) {
+//     if (num <= 1) return false;
+
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// let number = 17;
+
+// if (isPrime(number)) {
+//     console.log(number + " is a Prime Number");
+// } else {
+//     console.log(number + " is not a Prime Number");
+// }
+
+
+3// Swap Operation + Ascending & Descending Order
+
+let a = 10;
+let b = 20;
+
+console.log("Before Swap:", a, b);
+
+let temp = a;
+a = b;
+b = temp;
+
+console.log("After Swap:", a, b);
+
+// Descending Order
+
+arr.sort(function(a, b) {
+    return b - a;
+});
+
+console.log("Descending:", arr);
+
+4 // Largest, Smallest & Sum (Using Built-in Methods)
+
+// let arr = [4, 5, 8, 68, 79, 1];
+
+// let largest = Math.max(...arr);
+// let smallest = Math.min(...arr);
+// let sum = arr.reduce((total, num) => total + num, 0);
+
+// console.log("Largest:", largest);
+// console.log("Smallest:", smallest);
+// console.log("Sum:", sum);
+
+5 //  Right Triangle Pattern
+
+for (let i = 1; i <= 5; i++) {
+    let pattern = "";
+    for (let j = 1; j <= i; j++) {
+        pattern += "* ";
+    }
+    console.log(pattern);
+}
+
+6 // Factorial
+
+// function factorial(n) {
+//     if (n < 0) return "Not defined";
+//     if (n === 0 || n === 1) return 1;
+
+//     let result = 1;
+//     for (let i = 2; i <= n; i++) {
+//         result *= i;
+//     }
+//     return result;
+// }
+
+// let num = 5;
+// console.log("Factorial of", num, "is", factorial(num));
+
+</script>
+</body>
+</html>

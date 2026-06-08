@@ -1,0 +1,114 @@
+body.login-page {
+    --page-background:
+        radial-gradient(circle at 12% 14%, rgba(245, 196, 93, 0.2), transparent 24%),
+        radial-gradient(circle at 84% 18%, rgba(127, 140, 255, 0.2), transparent 24%),
+        linear-gradient(135deg, #0b1422 0%, #1a1830 48%, #1f1b1b 100%);
+}
+
+body.login-page[data-theme="light"] {
+    --page-background:
+        radial-gradient(circle at 12% 12%, rgba(245, 196, 93, 0.14), transparent 24%),
+        radial-gradient(circle at 84% 14%, rgba(127, 140, 255, 0.11), transparent 22%),
+        linear-gradient(135deg, #fffaf0 0%, #f1f2ff 48%, #faf3ec 100%);
+}
+
+.login-layout {
+    display: grid;
+    grid-template-columns: 1.04fr 0.96fr;
+    gap: 28px;
+    padding: 34px;
+    border-radius: 40px;
+}
+
+.login-layout__story {
+    display: grid;
+    gap: 22px;
+    align-content: start;
+}
+
+.signal-grid {
+    display: grid;
+    gap: 14px;
+}
+
+.signal-card {
+    padding: 18px 20px;
+    border-radius: 22px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.07);
+    line-height: 1.7;
+}
+
+.login-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    padding: 16px;
+    border-radius: 28px;
+}
+
+.login-layout__form {
+    display: grid;
+}
+
+.auth-card {
+    padding: 28px;
+    border-radius: 32px;
+}
+
+.auth-card__intro {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    display: grid;
+    gap: 16px;
+}
+
+.auth-submit {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.auth-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin: 22px 0 8px;
+}
+
+.auth-mini-grid article {
+    padding: 18px;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.auth-mini-grid strong {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.auth-mini-grid p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+@media (max-width: 1040px) {
+    .login-layout,
+    .login-metrics,
+    .auth-mini-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .login-layout,
+    .auth-card {
+        padding: 22px;
+    }
+}

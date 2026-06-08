@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <form name="form">
+        <legend>id</legend>
+        <label>name</label><br>
+        <input type="text" value="nm"><br><br>
+
+        <label>email</label><br>
+        <input type="email" name="em"><br><br>
+
+        <label>password</label><br>
+        <input type="password" value="ps"><br><br>
+
+        <label>area</label>
+        <select name="lo">
+            <option value="dhaka">dhaka</option>
+            <option value="khulna">khulna</option>
+            <option value="kushtia">kushtia</option>
+        </select><br><br>
+
+        <label>department</label><br>
+        <input type="checkbox" name="cb" value="ssc">SSC
+        <input type="checkbox" name="cb" value="hsc">HSC
+        <input type="checkbox" name="cb" value="bsc">BSC
+        <br><br>
+
+        <label>gender</label><br>
+        <input type="radio" name="gd"  value="male">male
+        <input type="radio" name="gd"  value="female">female
+
+        <input type="button" value="submit" onclick="show()">
+        <input type="reset" value="reset">
+        </form>
+    </fieldset>
+    <script>
+        function show(){
+     nm = document.forms['form']['nm'].value;
+     em = document.forms['form']['em'].value;
+     ps = document.forms['form']['ps'].value;
+     lo = document.forms['form']['lo'].value;
+       
+     if (nn == ''){ 
+        alert ('enter name first')
+        return false;
+     }
+     if(em == ''){ 
+        alert ('enter email first')
+        return false;
+     }
+     if(em.indexOf('@') == -1 || em.indexOf('.') == -1){
+     alert ('enter email first');
+    return false;
+     }
+     if(ps == ''){
+        alert ('enter password first')
+        return false;
+     }
+     if(ps.length < 4 || ps.length > 8){ 
+        alert ('pass should between 4-8 words')
+        return false;
+     }
+
+     const newcb = document.querySelectorAll('input[name="cb"]:checked'?.value ?? 'not selected'); 
+
+     const newgd = document.querySelector('input[name="gd"]:checked')?.value ??'not selected';
+ 
+     let windows = window.open("","","width = 500, height = 600");
+     windows.document.write(`
+     <p>name:${nm} </p>
+     <p>email:${em} </p>
+     <p>password:${ps} </p>
+     <p>area:${lo} </p>
+     <p>department:${newcb} </p>
+     <p>gender:${newgd} </p>
+     
+     `)
+    }
+
+    </script>
+ 
+</body>
+</html>

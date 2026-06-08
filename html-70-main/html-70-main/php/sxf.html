@@ -1,0 +1,140 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dom-form</title>
+
+        <style>
+
+        /* body{
+            background:black;
+            color:aqua;
+            font-family:Arial;
+        } */
+
+        /* Checkbox Style */
+        input[type="checkbox"]{
+            width:18px;
+            height:18px;
+            cursor:pointer;
+            accent-color:aqua;
+            margin-right:6px;
+        }
+
+        /* Radio Style */
+        input[type="radio"]{
+            width:18px;
+            height:18px;
+            cursor:pointer;
+            accent-color:orange;
+            margin-right:6px;
+        }
+
+        /* Input Style */
+        input, textarea{
+            padding:6px;
+            margin-top:4px;
+            margin-bottom:8px;
+        }
+
+        /* Button Style */
+        input[type="button"], input[type="reset"]{
+            padding:8px 15px;
+            cursor:pointer;
+        }
+
+        </style>
+        </head>
+
+        <body>
+
+        <form action="" name="frm">
+
+        <label>id</label> <br>
+        <input type="number" name="id"> <br>
+
+        <label>first name</label> <br>
+        <input type="text" name="fn"> <br>
+
+        <label>last name</label> <br>
+        <input type="text" name="ln"> <br>
+
+        <label>full name</label> <br>
+        <input type="text" name="fuln"> <br>
+
+        <label>email</label> <br>
+        <input type="email" name="eml"> <br>
+
+        <label>phone number</label> <br>
+        <input type="number" name="nmbr"> <br>
+
+        <label>address</label> <br>
+        <textarea name="add"></textarea>
+
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" name="dg" value="ssc"> SSC
+        <input type="checkbox" name="dg" value="hsc"> HSC
+        <input type="checkbox" name="dg" value="bsc"> BSC
+
+        <br><br>
+
+        <!-- Radio -->
+        <label>male</label>
+        <input type="radio" name="gndr">
+
+        <label>female</label>
+        <input type="radio" name="gndr">
+
+        <label>other</label>
+        <input type="radio" name="gndr">
+
+        <br><br>
+
+        <input type="button" value="submit" onclick="show()">
+        <input type="reset" value="reset">
+
+        </form>
+
+        <script>
+
+        function show(){
+
+        id = document.frm.id.value;
+        fn = document.frm.fn.value;
+        ln = document.frm.ln.value;
+        fuln = document.frm.fuln.value;
+        email = document.frm.eml.value;
+        phone = document.frm.nmbr.value;
+        addr = document.frm.add.value;
+
+        /* Checkbox */
+        let degree = "";
+        const dg = document.frm.dg;
+
+        for(let i = 0; i < dg.length; i++){
+            if(dg[i].checked){
+                degree += dg[i].value + " ";
+            }
+        }
+
+        /* New Window */
+        store = window.open("","","width=400px,height=400px");
+
+        store.document.write("ID : " + id +"<br>");
+        store.document.write("first name : " + fn+"<br>");
+        store.document.write("last name : " + ln+"<br>");
+        store.document.write("full name : " + fuln+"<br>");
+        store.document.write("email : " + email+"<br>");
+        store.document.write("phone number : " + phone+"<br>");
+        store.document.write("address : " + addr+"<br>");
+        store.document.write("check box : " + degree+"<br>");
+
+        }
+
+        </script>
+
+        </body>
+        </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+
+
+    <form action="#" name="frm">
+
+
+        name: <br>
+
+        <input type="text" name="r"> <br>
+
+        address : <br>
+
+        <textarea name="add" id="" cols="30"></textarea> <br>
+
+        
+        <input type="email" name="e"> <br>
+
+        <input type="submit" value="submit" onclick="show()">
+
+        <input type="reset" value="reset">
+
+    </form>
+
+
+    <!-- <button type="button" onclick="show()">submit</button> -->
+
+
+    <script>
+
+
+            function show(){
+
+
+                nam = document.frm.r.value;
+                add = document.frm.add.value;
+                store = window.open("","","width= 400px,height=400px");
+
+                store.document.write("student name : "+ nam+"<br>");
+                store.document.write("student address : "+add+"<br>");
+
+            }
+    </script>
+    
+</body>
+</html>

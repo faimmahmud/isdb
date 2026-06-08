@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>hii</legend>
+
+        <form name="form">
+            <label>Name</label><br>
+            <input type="text" name="name"><br><br>
+
+            <label>email</label><br>
+            <input type="email" name="eml"><br><br>
+
+
+            <label>password</label><br>
+            <input type="password" name="pass"><br><br>
+
+            <label>location</label><br>
+            <select name="loc">
+                <option value="Dhaka">Dhaka</option>
+                <option value="dhanmondi">dhanmondi</option>
+                <option value="kushtia">kushtia</option>
+            </select><br><br>
+
+            <label>gender</label><br>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+<br><br>
+            <input type="button" value="Submit" onclick="show()">
+            <input type="reset" value="reset">
+            
+        </form>
+    </fieldset>
+    
+    <script>
+        function show(){ 
+            let name = document.forms["form"]["name"].value;
+            let eml = document.forms["form"]["eml"].value;
+             let pass = document.forms["form"]["pass"].value;
+             let loc = document.forms["form"]["loc"].value;
+        }
+    </script>
+</body>
+</html>

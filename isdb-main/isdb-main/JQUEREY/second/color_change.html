@@ -1,0 +1,33 @@
+<!-- HTML -->
+<div class="color-box">Click me</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.color-box').click(function () {
+        // Generate random RGB values (0–255)
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+
+        // Apply random color
+        $(this).css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
+    });
+});
+</script>
+
+<!-- CSS -->
+<style>
+.color-box {
+    width: 200px;
+    height: 100px;
+    background: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+</style>

@@ -1,0 +1,108 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>student registation</title>
+        </head>
+        <body>
+            <fieldset>
+                <legend><b>student registation</b></legend>
+                <form name="frm">
+
+                
+        <label>id</label><br>
+        <input type="number" name="id"><br>
+
+        <label>name</label><br>
+        <input type="text" name="fn"><br>
+        <label>email</label><br>
+        <input type="email" name="eml"><br>
+
+        <label>number</label><br>
+        <input type="number" name="nmbr"><br>
+
+        <label>address</label><br>
+        <textarea name="add">dhaka</textarea>
+        <textarea name="add">khulna</textarea>
+        <textarea name="add">dhaka</textarea>
+
+        <br>
+
+        <select name="qualification">
+        <option value="BSC">BSC</option>
+        <option value="MBA">MBA</option>
+        <option value="MSC">MSC</option>
+        </select>
+
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" name="dg" value="SSC"> SSC
+        <input type="checkbox" name="dg" value="HSC"> HSC
+        <input type="checkbox" name="dg" value="BSC"> BSC
+
+        <br><br>
+
+        <!-- Radio -->
+        <input type="radio" name="gndr" value="Male"> Male
+        <input type="radio" name="gndr" value="Female"> Female
+       
+
+        <br><br>
+
+        <input type="button" value="submit" onclick="show()">
+        <input type="reset" value="reset">
+                </form>
+            </fieldset>
+            <script>function show()
+            {
+               let id = document.frm.id.value;
+               let eml = document.frm.eml.value;
+               let fn = document.frm.fn.value;
+               let nmbr = document.frm.nmbr.value;
+               let add = document.frm.add.value;
+               let qualification = document.frm.qualification.value;
+               //checkbox
+               let qfn = "";
+               let dg = document.frm.dg;
+               for (let i = 0; i < dg.length; i++){ 
+                if (dg[i].checked)
+                qfn += dg[i].value + " ";
+                
+               }
+
+               //radio
+
+               let gender = "";
+               let gndr = document.frm.gndr;
+               let selected = false;
+               for(i = 0;i < gndr.length;i++){ 
+                if(gndr[i].checked){
+                gender = gndr[i].value;
+                selected = true
+               }
+              }
+              if(!selected){ 
+                alert ("enter gender first");
+             return;
+              }
+              
+            //new window
+            lstore.document.write("ID : "+id+"<br>");
+            store.document.open("id :"+id+"<br>");
+            store.document.write("name : "+fn+"<br>");
+            store.document.write("email :"+eml+"<br>");
+            store.document.write("number ;"+num+"<br>");
+            store.document.write("Qualification : "+qualification+"<br>");
+            store.document.write("Degree : "+degree+"<br>");
+            store.document.write("Gender : "+gender+"<br><br>");
+
+            store.document.write("<button onclick='window.close()'>Close</button> ");
+            store.document.write("<button onclick='window.print()'>Print</button>");
+            }
+            </script>
+
+
+        </body>
+        </html>

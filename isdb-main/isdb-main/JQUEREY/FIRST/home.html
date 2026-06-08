@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Example</title>
+
+    <!-- jQuery CDN (safe way) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        #box {
+            display: none;
+            background: lightblue;
+            padding: 20px;
+            width: 200px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>hi i am here</p>
+    <p>hi i am here</p>
+    <p>hi i am here</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="btn">Slide</button>
+    <button id="btn_a">fade In</button>
+
+    <!-- BOX -->
+    <div id="box">
+        hello
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#hide").click(function () {
+                $("p").hide(1000);
+            });
+
+            $("#show").click(function () {
+                $("p").show(1000);
+            });
+
+            // SLIDE EFFECT
+            $("#btn").click(function () {
+                $("#box").slideToggle(1000);
+            });
+            $("#btn_a").click(function () {
+                $("#box").fadeIn(1000);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //iife
+    //  (
+    //     function (a , b){ 
+    //         document.write(a*b)
+    //     })(4,6);
+
+    // function car(name,model) { 
+    //     this.name = name;
+    //     this.model = model;
+    //     this.speed = function () {
+    //         document.write(this.name + this.model + "running first" ) 
+    //     }
+    // }
+    // let newcar = new car ("bmw","i8");
+    // // document.write(newcar.model+ " " + newcar.name);
+    // newcar.speed()
+    // for (row = 0; row <=7; row++)  { //create row 
+    //     for (col = 6; col >= 1; col--) {
+    //     document.write("*")
+    // }
+    // document.write("<br>")
+    // }
+
+    for (let row = 7; row >= 1; row--) {    // line সংখ্যা 7 থেকে 1 পর্যন্ত
+    for (let col = 1; col <= row; col++) {  // প্রতি লাইনে row এর সমান *
+        document.write("*");
+    }
+    document.write("<br>");
+}
+    </script>
+<!-- <script>
+    function car(name, model) {
+    this.name = name;
+    this.model = model;
+}
+
+car.prototype.speed = function () {
+    document.write(this.name + " " + this.model + " running fast");
+};
+
+let newcar = new car("bmw", "i8");
+newcar.speed(); -->
+
+</script>
+</body>
+</html>

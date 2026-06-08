@@ -1,0 +1,53 @@
+CREATE DATABASE IF NOT EXISTS royal_atlas CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE royal_atlas;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(120) NOT NULL,
+    email VARCHAR(190) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    role ENUM('customer', 'admin') NOT NULL DEFAULT 'customer',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS destinations (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(190) NOT NULL,
+    country VARCHAR(120) NOT NULL,
+    category VARCHAR(60) NOT NULL,
+    summary TEXT NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    sort_order INT UNSIGNED NOT NULL DEFAULT 100,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS packages (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(190) NOT NULL,
+    destination VARCHAR(120) NOT NULL,
+    category VARCHAR(60) NOT NULL,
+    price DECIMAL(10,2) NOT NULL DEFAULT 0,
+    rating DECIMAL(2,1) NOT NULL DEFAULT 4.8,
+    duration VARCHAR(80) NOT NULL,
+    description TEXT NOT NULL,
+    highlights TEXT NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    status ENUM('active', 'draft') NOT NULL DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS bookings (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(140) NOT NULL,
+    email VARCHAR(190) NOT NULL,
+    phone VARCHAR(60) NOT NULL,
+    package_id INT UNSIGNED NOT NULL,
+    travel_date DATE NOT NULL,
+    guests INT UNSIGNED NOT NULL DEFAULT 1,
+    notes TEXT NULL,
+    status VARCHAR(40) NOT NULL DEFAULT 'new',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX package_id_index (package_id),
+    CONSTRAINT bookings_package_fk FOREIGN KEY (package_id) REFERENCES packages(id) ON DELETE CASCADE
+);

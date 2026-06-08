@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Practice</title>
+
+    <!-- Correct jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <button id="btn">Load Data</button>
+
+    <div id="result">
+        <!-- এখানে ডেটা লোড হবে -->
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            $('#btn').click(function () {
+
+                // data.txt থেকে ডেটা লোড
+                $.get("data.txt", function (data) {
+
+                    $('#result').text(data);
+
+                }).fail(function () {
+
+                    alert("data.txt ফাইলটি খুঁজে পাওয়া যায়নি!");
+
+                });
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

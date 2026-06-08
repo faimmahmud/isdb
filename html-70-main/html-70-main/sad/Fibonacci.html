@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt('enter number'));
+        let a = 0 , b = 1;
+        document.write(a + " " + b + " ");
+
+        for(let i = 3 ; i <= num ; i++){
+            let next = a + b;
+            document.write(next + " ");
+            a = b , b = next;
+        }
+    </script>
+</body>
+</html>

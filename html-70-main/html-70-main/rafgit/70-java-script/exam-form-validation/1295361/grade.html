@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grade</title>
+</head>
+<body>
+
+
+    <SCript>
+
+        let studentNumber = Number(prompt("Enter The Student Number : "));
+
+        let gread 
+
+        if(studentNumber > 100 || studentNumber < 0){
+
+            gread ="ERROR";
+
+        }else if(studentNumber >= 80 && studentNumber <= 100 ){
+
+            gread = "A+";
+            
+        }else if(studentNumber >= 70 && studentNumber <= 79){
+
+            gread = "A";
+
+        }else if(studentNumber >= 60 && studentNumber <= 69){
+
+            gread = "B";
+
+        }else{
+
+            gread ="FAIL";
+
+        }
+
+        document.write("STUDENT GREAD IS : " + gread);
+
+    </SCript>
+    
+</body>
+</html>

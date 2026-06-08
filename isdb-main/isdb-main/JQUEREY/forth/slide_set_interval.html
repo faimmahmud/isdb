@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Dynamic Slider</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+    font-family:'Inter',sans-serif;
+}
+
+/* CARD */
+.card{
+    width:420px;
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(18px);
+    border-radius:22px;
+    padding:25px;
+    color:white;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* SLIDER WINDOW */
+.slider{
+    overflow:hidden;
+    border-radius:18px;
+    height:180px;
+}
+
+/* TRACK */
+.slides{
+    display:flex;
+    transition:0.5s ease;
+}
+
+/* SLIDE */
+.slide{
+    min-width:100%;
+    height:180px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:26px;
+    font-weight:700;
+    color:white;
+}
+
+/* BUTTONS */
+.btns{
+    margin-top:15px;
+}
+
+button{
+    padding:10px 14px;
+    margin:5px;
+    border:none;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+#start{background:#3b82f6;color:white;}
+#stop{background:#ef4444;color:white;}
+#next{background:#e2e8f0;}
+#prev{background:#cbd5e1;}
+
+.counter{
+    margin-top:10px;
+    font-size:14px;
+    opacity:0.8;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<h2>Random Slider Engine</h2>
+
+<div class="slider" id="slider">
+
+<div class="slides" id="slides"></div>
+
+</div>
+
+<div class="counter" id="counter">Slide 1</div>
+
+<div class="btns">
+
+<button id="prev">Prev</button>
+<button id="next">Next</button>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+
+</div>
+
+</div>
+
+<script>
+
+let index = 0;
+let intervalId;
+let total = 0;
+
+/* RANDOM TEXT GENERATOR */
+function randomText(){
+    const words = [
+        "Dashboard","Analytics","Reports","Users","Settings",
+        "Messages","Notifications","AI Panel","Live Data",
+        "Security","Cloud Sync","Performance","Updates"
+    ];
+
+    return words[Math.floor(Math.random()*words.length)];
+}
+
+/* RANDOM COLOR */
+function randomColor(){
+    const colors = [
+        "#60a5fa","#34d399","#fbbf24",
+        "#a78bfa","#fb7185","#38bdf8",
+        "#22c55e","#f97316"
+    ];
+    return colors[Math.floor(Math.random()*colors.length)];
+}
+
+/* GENERATE RANDOM SLIDES */
+function generateSlides(){
+
+    for(let i=0;i<20;i++){
+
+        let text = randomText();
+        let color = randomColor();
+
+        $("#slides").append(
+            `<div class="slide" style="background:${color}">
+                ${text}
+            </div>`
+        );
+    }
+
+    total = $(".slide").length;
+}
+
+/* UPDATE */
+function update(){
+    $("#slides").css("transform","translateX(" + (-index * 100) + "%)");
+    $("#counter").text("Slide " + (index+1) + " / " + total);
+}
+
+/* NEXT */
+function next(){
+    index++;
+    if(index >= total) index = 0;
+    update();
+}
+
+/* PREV */
+function prev(){
+    index--;
+    if(index < 0) index = total - 1;
+    update();
+}
+
+/* BUTTONS */
+$("#next").click(next);
+$("#prev").click(prev);
+
+/* AUTO START (1000ms) */
+$("#start").click(function(){
+    clearInterval(intervalId);
+    intervalId = setInterval(next,1000);
+});
+
+/* STOP */
+$("#stop").click(function(){
+    clearInterval(intervalId);
+});
+
+/* SWIPE */
+let startX = 0;
+
+$("#slider").on("touchstart", function(e){
+    startX = e.originalEvent.touches[0].clientX;
+});
+
+$("#slider").on("touchend", function(e){
+
+    let endX = e.originalEvent.changedTouches[0].clientX;
+
+    if(startX > endX + 50) next();
+    else if(startX < endX - 50) prev();
+
+});
+
+/* INIT */
+generateSlides();
+update();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+</head>
+<body>
+
+    <script>
+
+
+        let num = Number(prompt("Enter The FACTORIAL Number :"))
+        let factorial = 1;
+
+        if(num < 0){
+            document.write("ERROR Factorial")
+        }else{
+            for( i = 1 ; i <= num ; i++){
+                factorial *= i;
+            }
+            document.write("THE FACTORIAL NUMBER IS : " + factorial);
+        }
+    </script>
+    
+</body>
+</html>
+
+

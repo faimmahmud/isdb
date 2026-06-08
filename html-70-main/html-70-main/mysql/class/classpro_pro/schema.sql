@@ -1,0 +1,22 @@
+CREATE DATABASE IF NOT EXISTS classpro;
+USE classpro;
+
+CREATE TABLE IF NOT EXISTS `user` (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(120) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    contact_no VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS `product` (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(120) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    manfacturer_id INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_product_user
+        FOREIGN KEY (manfacturer_id) REFERENCES `user`(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);

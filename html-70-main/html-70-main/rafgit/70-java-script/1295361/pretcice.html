@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pretcic</title>
+</head>
+
+<body>
+<!-- 
+    <script>
+
+        let num = Number(prompt("ENTER THE NUMBER"));
+        let peimr = true;
+
+        if (num <= 1) {
+            peimr = false;
+        } else {
+            for (i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    peimr = false;
+                }
+            }
+        }
+
+        if (peimr) {
+            document.write("NUMBER IS PRIME");
+        } else {
+            document.write("NUMBER IS NOT PRIME");
+        }
+
+    </script> -->
+
+
+
+    <!-- <script>
+
+
+        let studentNumber = Number(prompt("ENTER THE STUDENT NUMBER :"));
+
+        let gread 
+        
+        if(studentNumber > 100 || studentNumber < 0){
+            gread = "ERROR";
+        }else if(studentNumber >= 80 && studentNumber <= 100){
+            gread = "A+";
+        }else if(studentNumber >= 70 && studentNumber <= 79){
+            gread = "A";
+        }else if(studentNumber >= 60 && studentNumber <= 69){
+            gread = "B";
+        }else{
+            gread = "FAIL"
+        }
+
+        document.write(gread);
+
+
+    </script> -->
+
+
+    <!-- <script>
+
+
+
+        let num =Number(prompt("first number"));
+        
+        let factorial = 1;
+        let serial = "  ";
+
+        if(num < 0 ){
+
+            document.write("ERROR")
+        }else{
+            for(let i = 1; i<=num;i++){
+                factorial *= i;
+                serial += factorial;
+                if(i<num){
+                    serial += " , ";
+                }
+            }
+            document.write(num+"  "+"all factorial is :"+ serial + "<br> ");
+            document.write("factorial is :"+ factorial);
+        }
+    </script> -->
+
+
+    <!-- <script>
+
+        
+        let first = 0;
+        let second =1;
+        let next
+        let num = Number(prompt("enter the number :"));
+
+        for(let i = 0; i<=num; i++){
+            document.write(first + " ")
+
+            next = first + second;
+            first = second;
+            second = next;
+        }
+
+
+    </script> -->
+
+    <script>
+
+
+        let num =[0,5,0,3,4,5,6,-6,7,-4,-2,5,3,-3,-6,-7,-8,4,-98,0,-52,0,50,-80,70,0,0,0]
+
+        let positive=0;
+        let negetive=0;
+        let zero =0;
+        let sum = 0;
+
+        for(let i=0;i<num.length; i++){
+            if(num[i] > 0){
+                positive++;
+            }else if(num[i]<0){
+                negetive++;
+            }else{
+                zero++;
+            }
+            sum += num[i];
+        }
+
+        document.write("positive number = "+positive+"<br>");
+        document.write("negetive number = "+negetive+"<br>");
+        document.write("zero number = "+zero+"<br>");
+        document.write("sum number = "+sum+"<br>");
+
+
+    </script>
+
+
+
+</body>
+
+</html>

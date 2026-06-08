@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Interval Demo</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f1f5f9;
+    transition:0.5s;
+}
+
+.card{
+    width:400px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+h1{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+#clock{
+    color:#64748b;
+    margin-bottom:20px;
+}
+
+/* CIRCLE */
+.circle{
+    position:relative;
+    width:220px;
+    height:220px;
+    margin:20px auto;
+}
+
+svg{
+    transform:rotate(-90deg);
+}
+
+circle{
+    fill:none;
+    stroke-width:12;
+    stroke-linecap:round;
+}
+
+.bg{
+    stroke:#e2e8f0;
+}
+
+.progress{
+    stroke:#3b82f6;
+    stroke-dasharray:628;
+    stroke-dashoffset:628;
+    transition:0.5s linear;
+}
+
+.counter{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    font-weight:bold;
+}
+
+#box{
+    width:90px;
+    height:90px;
+    margin:20px auto;
+    border-radius:18px;
+    background:#3b82f6;
+    transition:0.3s;
+}
+
+.animate{
+    transform:scale(1.2) rotate(10deg);
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    margin:8px;
+    font-size:15px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+#startBtn{
+    background:#3b82f6;
+    color:white;
+}
+
+#stopBtn{
+    background:#e2e8f0;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<h1>setInterval</h1>
+
+<div id="clock"></div>
+
+<!-- ARC -->
+<div class="circle">
+
+<svg width="220" height="220">
+
+<circle class="bg" cx="110" cy="110" r="100"></circle>
+
+<circle class="progress" cx="110" cy="110" r="100"></circle>
+
+</svg>
+
+<div class="counter" id="counter">0</div>
+
+</div>
+
+<div id="box"></div>
+
+<button id="startBtn">Start</button>
+<button id="stopBtn">Stop</button>
+
+</div>
+
+<script>
+
+// CLOCK
+setInterval(function(){
+    $("#clock").text(new Date().toLocaleTimeString());
+},1000);
+
+
+let count = 0;
+let progress = 628;
+let intervalId;
+
+
+// START
+$("#startBtn").click(function(){
+
+    clearInterval(intervalId);
+
+    intervalId = setInterval(function(){
+
+        count++;
+        $("#counter").text(count);
+
+        // random colors
+        let c1 = "#" + Math.floor(Math.random()*16777215).toString(16);
+        let c2 = "#" + Math.floor(Math.random()*16777215).toString(16);
+        let c3 = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+        // box color
+        $("#box").css("background", c1);
+
+        // progress color
+        $(".progress").css("stroke", c2);
+
+        // background color
+        $("body").css("background", c3);
+
+        // animation
+        $("#box").toggleClass("animate");
+
+        // progress animation
+        progress -= 25;
+
+        if(progress <= 0){
+            progress = 628;
+        }
+
+        $(".progress").css("stroke-dashoffset", progress);
+
+    },1000);
+
+});
+
+
+// STOP
+$("#stopBtn").click(function(){
+    clearInterval(intervalId);
+});
+
+</script>
+
+</body>
+</html>

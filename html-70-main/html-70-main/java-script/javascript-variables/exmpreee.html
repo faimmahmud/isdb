@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>fahim</legend>
+        <form name="form">
+            <label>name</label><br>
+            <input type="text" name="name"><br><br>
+
+            <label>email</label><br>
+            <input type="email" name="eml">
+
+            <label>password</label>
+            <input type="password" name="pass"><br><br>
+
+            <label>dipartment</label>
+            <select name="dip">
+                <option value="computer">computer</option>
+                <option value="genarel">genarel</option>
+            </select><br><br>
+
+            <label>gender</label>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+            <br><br>
+
+            <input type="button" value="submit" onclick="show()">
+            <input type="reset" value="reset">
+        </form>
+    </fieldset>
+
+    <script>
+        function show(){ 
+            let name = document.forms["form"]["name"].value;
+            let eml = document.forms["form"]["eml"].value;
+            let pass = document.forms["form"]["pass"].value;
+            let dip = document.forms["form"]["dip"].value;
+
+            if (name == ''){ 
+                alert ('enter name first')
+                return false;
+            }
+
+            if (eml == ''){ 
+                alert ('enter eml first')
+                return false;
+            }
+
+            if (eml.indexOf("@") == -1 || eml.indexOf('.') == -1){ 
+                alert ('email invalid')
+                return false;
+            }
+            if (pass == ''){ 
+                alert ('enter password first')
+                return false;
+            }
+
+            if (pass.length < 4 || pass.length > 8){ 
+                alert ('password between 4 to 8 word')
+                return false;
+            }
+
+            const gender = document.querySelector('input[name="gender"]:checked')?.value ??'not selected';
+
+            let win = window.document.open("","","width=500,height=600");
+            win.document.write(`
+            <p>name: ${name}</P>
+            <p>email: ${eml}</P>
+            <p>password: ${pass}</P>
+            <p>dipartment: ${dip}</P>
+            <p>gender: ${gender}</P>
+            
+            `)
+            
+        }
+    </script>
+</body>
+</html>

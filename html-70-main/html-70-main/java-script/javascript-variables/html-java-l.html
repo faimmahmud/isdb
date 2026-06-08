@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Checkbox & Radio</title>
+</head>
+<body>
+
+<form style="background-color: rgba(2, 69, 255, 0.836) ; color: #e2dfdf; width: 35%; padding:15px; border-radius:10px; ba">
+    ID:<br>
+    <input type="text" id="id"><br><br>
+
+    First Name:<br>
+    <input type="text" id="fname" oninput="setFullName()"><br><br>
+
+    Last Name:<br>
+    <input type="text" id="lname" oninput="setFullName()"><br><br>
+
+    Full Name:<br>
+    <input type="text" id="fullname" readonly><br><br>
+
+    Email:<br>
+    <input type="email" id="email"><br><br>
+
+    Address:<br>
+    <textarea id="address"></textarea><br><br>
+
+    Gender:<br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    Subjects:<br>
+    <input type="checkbox" name="subjects" value="HTML"> HTML
+    <input type="checkbox" name="subjects" value="Java"> Java
+    <input type="checkbox" name="subjects" value="Bootstrap"> Bootstrap
+    <input type="checkbox" name="subjects" value="PHP"> PHP
+    <input type="checkbox" name="subjects" value="Laravel"> Laravel
+    <br><br>
+
+    <button type="button" onclick="openNewWindow()">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+
+<script>
+function setFullName() {
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    document.getElementById("fullname").value = fname + " " + lname;
+}
+
+function openNewWindow() {
+    var id = document.getElementById("id").value;
+    var fullname = document.getElementById("fullname").value;
+    var email = document.getElementById("email").value;
+    var address = document.getElementById("address").value;
+
+    // Get selected gender
+    var genderElems = document.getElementsByName("gender");
+    var gender = "Not selected";
+    for(var i=0; i<genderElems.length; i++) {
+        if(genderElems[i].checked) {
+            gender = genderElems[i].value;
+            break;
+        }
+    }
+
+    // Get selected subjects (multiple checkboxes)
+    var subjectElems = document.getElementsByName("subjects");
+    var selectedSubjects = [];
+    for(var i=0; i<subjectElems.length; i++) {
+        if(subjectElems[i].checked) {
+            selectedSubjects.push(subjectElems[i].value);
+        }
+    }
+    var subjects = selectedSubjects.length > 0 ? selectedSubjects.join(", ") : "None";
+
+    var newWin = window.open("", "", "width=500,height=400");
+    newWin.document.write("<h2>Submitted Data</h2>");
+    newWin.document.write("<p><b>ID:</b> " + id + "</p>");
+    newWin.document.write("<p><b>Full Name:</b> " + fullname + "</p>");
+    newWin.document.write("<p><b>Email:</b> " + email + "</p>");
+    newWin.document.write("<p><b>Address:</b> " + address + "</p>");
+    newWin.document.write("<p><b>Gender:</b> " + gender + "</p>");
+    newWin.document.write("<p><b>Subjects:</b> " + subjects + "</p>");
+}
+</script>
+
+</body>
+</html>

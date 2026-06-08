@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frmm">
+
+        <label>name</label> <br>
+        <input type="text" name="nm"> <br><br>
+        <label>Email</label><br>
+        <input type="email" name="em"><br><br>
+        <label>address</label><br>
+        <textarea name="add" >dhaka</textarea><br><br>
+        <label>course</label><br>
+        <select name="cor">
+            <option value="Mba" >Mba</option>
+            <option value="Bcs" >Bcs</option>
+            <option value="Bsc">Bsc</option>
+        </select><br><br>
+        <label >gender</label><br>
+        <label>male</label>
+        <input type="radio" name="gen">
+        <label>female</label>
+        <input type="radio" name="gen">
+        <label>others</label>
+        <input type="radio" name="gen"><br><br>
+        <label>subject</label><br>
+        <input type="checkbox" name="sub">English
+        <input type="checkbox" name="sub">Bengali
+        <input type="checkbox" name="sub">Math
+        <br><br>
+        <input type="button" value="Submit" onclick="show()">
+        <input type="button" value="reset">
+    </form>
+    <script>
+        function show(){
+    nm = document.frmm.nm.value;
+    em = document.frmm.em.value;
+    add = document.frmm.add.value;
+    cor = document.frmm.cor.value;
+    gen = document.frmm.sex.value;
+    sub = document.frmm.sub.value;
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" name="f">
+        Name: <br>
+        <input type="text" name="n">
+        <br>
+        Address: <br>
+        <textarea name="ad" id="" cols="30"></textarea> <br>
+        Subject: <br>
+        <input type="checkbox" name="s" value="HTML">HTML
+        <input type="checkbox" name="s" value="Javascript">Javascript
+        <input type="checkbox" name="s" value="PHP">PHP <br>
+        <input type="submit" value="Submit" onclick="info()">
+        <input type="reset">
+
+    </form>
+    <script>
+        function info() {
+            nam = document.f.n.value;
+            address = document.f.ad.value;
+            subject = "";
+            store = window.open("", "", "width=400px,height=400px");
+
+
+            for (j = 0; j < document.f.s.length; j++) {
+                if (document.f.s[j].checked) {
+                    subject += document.f.s[j].value + ", ";
+                }
+            }
+            store.document.write("Student Name: " + nam + "<br>");
+            store.document.write("Student Name: " + address + "<br>");
+            store.document.write("Subject: " + subject);
+            store.document.write("<input type='button' value='Close me' onclick='self.close();' />");
+            store.document.write("<input type='button' value='Print' onclick='self.print();' />");
+
+        }
+
+
+        // window.open()
+
+
+
+        // function my_f() {
+        //     var name = document.f.n.value;
+        //     var address = document.f.add.value;
+        //     doc = open("", "", "width=100px, height=200px");
+
+        //     doc.document.write("Name: " + name + "<br>");
+        //     doc.document.write("Address: " + address + "<br>");
+        // }
+    </script>
+</body>
+
+</html><input type="radio" name="gndr" value="Other"> Other

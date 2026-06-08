@@ -1,0 +1,68 @@
+{
+  "note": "Clean high-resolution real destination photos from Wikimedia Commons thumbnails. Luxury texture and arcs are applied in CSS, not baked into the photos.",
+  "credits": [
+    {
+      "asset": "assets/images/destinations/maldives.webp",
+      "file_title": "File:Thulhagiri Bungalows Row.JPG",
+      "artist": "User: (WT-shared) Jpatokal at wts wikivoyage",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Thulhagiri_Bungalows_Row.JPG"
+    },
+    {
+      "asset": "assets/images/destinations/swiss-alps.webp",
+      "file_title": "File:20190725 Oeschinensee-Panorama, Kandersteg (06540-42 stitch).jpg",
+      "artist": "G\u00fcnter Seggeb\u00e4ing, Coesfeld",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20190725_Oeschinensee-Panorama,_Kandersteg_(06540-42_stitch).jpg"
+    },
+    {
+      "asset": "assets/images/destinations/dubai.webp",
+      "file_title": "File:Dubai banner 2.jpg",
+      "artist": "Dubai's_skyline_at_dawn.jpg: Jan Michael Pfeiffer derivative work: JamesA",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dubai_banner_2.jpg"
+    },
+    {
+      "asset": "assets/images/destinations/santorini.webp",
+      "file_title": "File:Oia, Santorini HDR sunset.jpg",
+      "artist": "Pedro Szekely",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Oia,_Santorini_HDR_sunset.jpg"
+    },
+    {
+      "asset": "assets/images/destinations/kyoto.webp",
+      "file_title": "File:Kyoto banner Fushimi Inari Torii.png",
+      "artist": "Paul Vlaar",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kyoto_banner_Fushimi_Inari_Torii.png"
+    },
+    {
+      "asset": "assets/images/destinations/sahara.webp",
+      "file_title": "File:Libya 4985 Tadrart Acacus Luca Galuzzi 2007.jpg",
+      "artist": "Luca Galuzzi (Lucag)",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Libya_4985_Tadrart_Acacus_Luca_Galuzzi_2007.jpg"
+    },
+    {
+      "asset": "assets/images/destinations/bali.webp",
+      "file_title": "File:Bali banner Rice terraces.jpg",
+      "artist": "1_bali_jatiluwih_rice_terrace_panorama.jpg: chensiyuan derivative work: Jjtkk",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bali_banner_Rice_terraces.jpg"
+    },
+    {
+      "asset": "assets/images/destinations/iceland.webp",
+      "file_title": "File:Iceland Banner.jpg",
+      "artist": "Hansueli Krapf",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Iceland_Banner.jpg"
+    },
+    {
+      "asset": "assets/images/destinations/patagonia.webp",
+      "file_title": "File:Colors of Patagonia - Flickr - Doug Scortegagna.jpg",
+      "artist": "Douglas Scortegagna from Flores da Cunha, Brasil",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Colors_of_Patagonia_-_Flickr_-_Doug_Scortegagna.jpg"
+    }
+  ]
+}

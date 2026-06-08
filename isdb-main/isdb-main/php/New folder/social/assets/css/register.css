@@ -1,0 +1,107 @@
+body.register-page {
+    --page-background:
+        radial-gradient(circle at 14% 12%, rgba(79, 209, 197, 0.18), transparent 22%),
+        radial-gradient(circle at 84% 12%, rgba(255, 122, 89, 0.2), transparent 26%),
+        linear-gradient(135deg, #09151f 0%, #111f2a 40%, #1e2238 100%);
+}
+
+body.register-page[data-theme="light"] {
+    --page-background:
+        radial-gradient(circle at 14% 12%, rgba(79, 209, 197, 0.1), transparent 22%),
+        radial-gradient(circle at 84% 10%, rgba(255, 122, 89, 0.12), transparent 26%),
+        linear-gradient(135deg, #f4fffd 0%, #f6f8ff 44%, #fff4ed 100%);
+}
+
+.register-stage {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 28px;
+    padding: 34px;
+    border-radius: 40px;
+}
+
+.register-stage__intro {
+    display: grid;
+    gap: 22px;
+    align-content: start;
+}
+
+.register-rail {
+    display: grid;
+    gap: 14px;
+}
+
+.register-rail__item {
+    padding: 18px 20px;
+    border-radius: 22px;
+    border: 1px solid var(--line);
+    background:
+        linear-gradient(135deg, rgba(79, 209, 197, 0.1), rgba(255, 122, 89, 0.08)),
+        rgba(255, 255, 255, 0.06);
+    line-height: 1.7;
+}
+
+.register-card {
+    padding: 30px;
+    border-radius: 34px;
+}
+
+.register-form {
+    display: grid;
+    gap: 18px;
+}
+
+.register-form__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.register-form__wide {
+    grid-column: 1 / -1;
+}
+
+.register-submit {
+    width: 100%;
+}
+
+.register-footer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 22px 0 8px;
+}
+
+.register-footer article {
+    padding: 18px;
+    border-radius: 22px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.register-footer strong {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.register-footer p {
+    margin: 0;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+@media (max-width: 1040px) {
+    .register-stage,
+    .register-form__grid,
+    .register-footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .register-stage,
+    .register-card {
+        padding: 22px;
+    }
+}
