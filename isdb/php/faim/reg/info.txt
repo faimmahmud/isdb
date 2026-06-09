@@ -1,0 +1,4 @@
+1|faim|admin@test.com|$2y$10$OkcTK/BDjF5YKUjL2OE.0OkjKF8J9Gzu4Dhc49UI4SY6BCLYSolP2|aa|01|faim
+1|faim|admin@test.com|$2y$10$jjEpiyvVQ6C6H3Eree.sqe553S5KZ7JQo9/tX6W3h40r/4XtOnv02|aa|01|faim
+1|Faim Mahmud|faimmahmud@gmail.com|$2y$10$aZBqxVllA2lcHd8Cg.4wgOl8j79JgpKYkeMNXyIkz4FuxwBgTOABG|aa|01|faim
+1|Faim Mahmud|faimmahmud@gmail.com|$2y$10$OfuQzFPFXDM0FMz5nnChtesSD477fztX58IPC6FeYcaV0Mzr3bWS.|aa|11|faim

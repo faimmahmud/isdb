@@ -1,0 +1,149 @@
+{
+  "note": "Top travel countries refreshed with real high-resolution Wikimedia/Wikivoyage travel images.",
+  "credits": [
+    {
+      "country": "France",
+      "asset": "assets/images/countries/france.webp",
+      "file_title": "File:01. Panorama de Lyon pris depuis le toit de la Basilique de Fourvière.jpg",
+      "artist": "Otourly",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:01._Panorama_de_Lyon_pris_depuis_le_toit_de_la_Basilique_de_Fourvi%C3%A8re.jpg",
+      "score": 22
+    },
+    {
+      "country": "Italy",
+      "asset": "assets/images/countries/italy.webp",
+      "file_title": "File:Panoramic view of Como Lake (Lago di Como), seen from the mountain Monte Grona - Plesio (Como) 2015-10-25.JPG",
+      "artist": "Mænsard vokser",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Como_Lake_(Lago_di_Como),_seen_from_the_mountain_Monte_Grona_-_Plesio_(Como)_2015-10-25.JPG",
+      "score": 30
+    },
+    {
+      "country": "Japan",
+      "asset": "assets/images/countries/japan.webp",
+      "file_title": "File:Aharen Beach On Tokashiki Island 2009 (7373).JPG",
+      "artist": "Tomaž Vajngerl",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aharen_Beach_On_Tokashiki_Island_2009_(7373).JPG",
+      "score": 26
+    },
+    {
+      "country": "United States",
+      "asset": "assets/images/countries/united-states.webp",
+      "file_title": "File:Black Rock Mountain View.jpg",
+      "artist": "Thomsonmg2000",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_Rock_Mountain_View.jpg",
+      "score": 26
+    },
+    {
+      "country": "United Arab Emirates",
+      "asset": "assets/images/countries/united-arab-emirates.webp",
+      "file_title": "File:Dubai aerial view.jpg",
+      "artist": "Nino Verde",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dubai_aerial_view.jpg",
+      "score": 26
+    },
+    {
+      "country": "Maldives",
+      "asset": "assets/images/countries/maldives.webp",
+      "file_title": "File:Dhoani view of Ukulhas.jpg",
+      "artist": "Rappey",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dhoani_view_of_Ukulhas.jpg",
+      "score": 22
+    },
+    {
+      "country": "Switzerland",
+      "asset": "assets/images/countries/switzerland.webp",
+      "file_title": "File:Aerial image of Finsteraarhorn (view from the east).jpg",
+      "artist": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Finsteraarhorn_(view_from_the_east).jpg",
+      "score": 26
+    },
+    {
+      "country": "Greece",
+      "asset": "assets/images/countries/greece.webp",
+      "file_title": "File:Aerial view of the Old Venetian Harbour in Chania, Greece.jpg",
+      "artist": "dronepicr",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Old_Venetian_Harbour_in_Chania,_Greece.jpg",
+      "score": 30
+    },
+    {
+      "country": "Indonesia",
+      "asset": "assets/images/countries/indonesia.webp",
+      "file_title": "File:Bintang Beer by the Beach.jpg",
+      "artist": "Crisco 1492",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bintang_Beer_by_the_Beach.jpg",
+      "score": 22
+    },
+    {
+      "country": "Iceland",
+      "asset": "assets/images/countries/iceland.webp",
+      "file_title": "File:GullfossOverview.jpg",
+      "artist": "Andreas Tille",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GullfossOverview.jpg",
+      "score": 22
+    },
+    {
+      "country": "Morocco",
+      "asset": "assets/images/countries/morocco.webp",
+      "file_title": "File:02-beach-agadir-morocco.JPG",
+      "artist": "Elmschrat",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:02-beach-agadir-morocco.JPG",
+      "score": 22
+    },
+    {
+      "country": "Spain",
+      "asset": "assets/images/countries/spain.webp",
+      "file_title": "File:Aerial view of La Sagrada Familia, Barcelona, Spain (51227006134).jpg",
+      "artist": "dronepicr",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_La_Sagrada_Familia,_Barcelona,_Spain_(51227006134).jpg",
+      "score": 26
+    },
+    {
+      "country": "Thailand",
+      "asset": "assets/images/countries/thailand.webp",
+      "file_title": "File:Koh Lipe island coast.jpg",
+      "artist": "VascoPlanet World Photography",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Koh_Lipe_island_coast.jpg",
+      "score": 26
+    },
+    {
+      "country": "Germany",
+      "asset": "assets/images/countries/germany.webp",
+      "file_title": "File:Aerial View - Landschaft Markgräflerland1.jpg",
+      "artist": "Taxiarchos228",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_-_Landschaft_Markgr%C3%A4flerland1.jpg",
+      "score": 26
+    },
+    {
+      "country": "India",
+      "asset": "assets/images/countries/india.webp",
+      "file_title": "File:Busy Indore night traffic (5104223286).jpg",
+      "artist": "McKay Savage from London, UK",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Busy_Indore_night_traffic_(5104223286).jpg",
+      "score": 22
+    },
+    {
+      "country": "China",
+      "asset": "assets/images/countries/china.webp",
+      "file_title": "File:Huanglong & Broken Bridge - Hangzhou City & West Lake near Broken Bridge.jpg",
+      "artist": "User:CatOnMars",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Huanglong_%26_Broken_Bridge_-_Hangzhou_City_%26_West_Lake_near_Broken_Bridge.jpg",
+      "score": 26
+    }
+  ]
+}

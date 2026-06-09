@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Maldives Celestial Villa",
+    "destination": "Maldives",
+    "category": "island",
+    "price": 4850,
+    "rating": 4.9,
+    "duration": "6 days",
+    "description": "A private overwater escape with reef snorkeling, champagne sandbank dining, and sunset seaplane arrivals.",
+    "highlights": "Overwater villa,Private reef guide,Sunset yacht dinner,Spa ritual",
+    "image": "assets/images/destinations/maldives.webp",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "title": "Swiss Alps Signature Route",
+    "destination": "Switzerland",
+    "category": "mountain",
+    "price": 6200,
+    "rating": 4.8,
+    "duration": "8 days",
+    "description": "Glacier rail, helicopter viewpoints, lake hotels, and a private alpine dining program.",
+    "highlights": "Glacier Express,Private chalet,Heli viewpoint,Michelin dinner",
+    "image": "assets/images/destinations/swiss-alps.webp",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "title": "Dubai Golden Horizon",
+    "destination": "United Arab Emirates",
+    "category": "city",
+    "price": 3900,
+    "rating": 4.7,
+    "duration": "5 days",
+    "description": "A polished city and desert journey with skyline suites, yacht evenings, and private souk styling.",
+    "highlights": "Skyline suite,Desert supper,Yacht lounge,Private shopping",
+    "image": "assets/images/destinations/dubai.webp",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "title": "Kyoto Private Season",
+    "destination": "Japan",
+    "category": "heritage",
+    "price": 5400,
+    "rating": 4.9,
+    "duration": "7 days",
+    "description": "A quiet cultural itinerary with temple access, ryokan stays, tea ceremony, and chef-led dining.",
+    "highlights": "Private temples,Ryokan suite,Tea master,Chef table",
+    "image": "assets/images/destinations/kyoto.webp",
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "title": "Sahara Nightfall Caravan",
+    "destination": "Morocco",
+    "category": "desert",
+    "price": 3150,
+    "rating": 4.8,
+    "duration": "6 days",
+    "description": "Luxury desert camping, cinematic dune drives, Atlas foothill lodges, and stargazing suppers.",
+    "highlights": "Tented camp,Dune drive,Atlas lodge,Stargazing",
+    "image": "assets/images/destinations/sahara.webp",
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "title": "Iceland Aurora Atelier",
+    "destination": "Iceland",
+    "category": "adventure",
+    "price": 5700,
+    "rating": 4.8,
+    "duration": "7 days",
+    "description": "A northern light journey through black beaches, ice caves, geothermal spas, and volcanic coastlines.",
+    "highlights": "Aurora chase,Ice cave,Geothermal spa,Black beach",
+    "image": "assets/images/destinations/iceland.webp",
+    "status": "active"
+  }
+]

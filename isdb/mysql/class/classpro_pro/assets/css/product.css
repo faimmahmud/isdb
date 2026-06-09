@@ -1,0 +1,72 @@
+.product-layout{
+    display:grid;
+    grid-template-columns: 1fr .92fr;
+    gap: 22px;
+    align-items:start;
+}
+
+.product-hero{
+    padding: 28px;
+    border-radius: 28px;
+    background:
+        radial-gradient(circle at top right, rgba(245,158,11,.18), transparent 24%),
+        radial-gradient(circle at bottom left, rgba(124,58,237,.16), transparent 28%),
+        linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.04));
+    border:1px solid rgba(255,255,255,0.12);
+    box-shadow: var(--shadow);
+}
+
+.product-hero h1{
+    margin: 14px 0 12px;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.05;
+}
+.product-hero p{
+    color: var(--muted);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.product-card, .inventory-card{
+    padding: 24px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.product-grid .full{grid-column:1 / -1}
+
+.inventory-list{
+    display:grid;
+    gap: 12px;
+    margin-top: 16px;
+}
+.inventory-item{
+    padding: 16px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+}
+.inventory-head{
+    display:flex;
+    justify-content:space-between;
+    gap: 10px;
+    align-items:flex-start;
+    margin-bottom: 8px;
+}
+.inventory-name{font-weight:800}
+.inventory-meta{color:var(--muted); line-height:1.6; font-size:.94rem}
+.price{
+    font-weight: 900;
+    font-size: 1.05rem;
+    color: #dbeafe;
+}
+
+@media (max-width: 960px){
+    .product-layout{grid-template-columns:1fr}
+}
+@media (max-width: 680px){
+    .product-grid{grid-template-columns:1fr}
+}

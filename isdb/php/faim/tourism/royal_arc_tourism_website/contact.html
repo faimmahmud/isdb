@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Royal Arc Tourism</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="page-contact">
+  <div class="texture top"></div>
+  <div class="texture bottom"></div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">RA</span>
+        <span>
+          <strong>Royal Arc Tourism</strong>
+          <small>Contact</small>
+        </span>
+      </a>
+      <button class="menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">☰</button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="user/dashboard.html" class="pill">User</a>
+        <a href="admin/dashboard.html" class="pill gold">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero reveal">
+      <span class="badge">Contact system</span>
+      <h1 style="max-width:12ch">Speak to the royal travel team.</h1>
+      <p class="hero-copy">
+        This page is intentionally calmer and more functional, with a form layout and map-style panel
+        to balance beauty and utility.
+      </p>
+    </section>
+
+    <section class="section split reveal">
+      <div class="surface rounded-xl card-pad">
+        <h2>Send a travel inquiry</h2>
+        <p style="margin-top:.65rem">Tell the team about your route, date, group size, and luxury preferences.</p>
+
+        <form class="form" style="margin-top:1.2rem">
+          <div class="field">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your full name">
+          </div>
+          <div class="field">
+            <label>Email Address</label>
+            <input type="email" placeholder="name@example.com">
+          </div>
+          <div class="field">
+            <label>Preferred Package</label>
+            <select>
+              <option>Royal Signature</option>
+              <option>Grand Weekend</option>
+              <option>Palace Privilege</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea placeholder="Write your travel request here..."></textarea>
+          </div>
+          <button class="btn btn-primary" type="button">Submit Inquiry</button>
+        </form>
+      </div>
+
+      <div class="surface rounded-xl map-card">
+        <div>
+          <span class="badge">Royal office map</span>
+          <h2 style="margin-top:1rem">Luxury support point</h2>
+          <p style="margin-top:.65rem">A decorative grid map with a soft live pin to give the contact section a premium system feel.</p>
+        </div>
+        <div class="map-grid">
+          <div class="map-pin"></div>
+        </div>
+        <div style="margin-top:1rem">
+          <p><strong style="color:var(--text)">Email:</strong> support@royalarc.example</p>
+          <p><strong style="color:var(--text)">Phone:</strong> +00 123 456 789</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>Contact architecture.</p></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1506 @@
+{
+  "note": "This project bundles optimized WebP travel covers for all countries and territories returned by Rest Countries. The first generation pass used Wikimedia Commons/Wikivoyage thumbnails; missing assets are local generated covers so the site runs offline.",
+  "count": 250,
+  "credits": [
+    {
+      "country": "France",
+      "asset": "assets/images/countries/france.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Italy",
+      "asset": "assets/images/countries/italy.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Japan",
+      "asset": "assets/images/countries/japan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "United States",
+      "asset": "assets/images/countries/united-states.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "United Arab Emirates",
+      "asset": "assets/images/countries/united-arab-emirates.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Maldives",
+      "asset": "assets/images/countries/maldives.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Switzerland",
+      "asset": "assets/images/countries/switzerland.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Greece",
+      "asset": "assets/images/countries/greece.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Indonesia",
+      "asset": "assets/images/countries/indonesia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Iceland",
+      "asset": "assets/images/countries/iceland.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Morocco",
+      "asset": "assets/images/countries/morocco.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Spain",
+      "asset": "assets/images/countries/spain.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Thailand",
+      "asset": "assets/images/countries/thailand.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Turkey",
+      "asset": "assets/images/countries/turkey.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Australia",
+      "asset": "assets/images/countries/australia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "United Kingdom",
+      "asset": "assets/images/countries/united-kingdom.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Canada",
+      "asset": "assets/images/countries/canada.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "New Zealand",
+      "asset": "assets/images/countries/new-zealand.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Brazil",
+      "asset": "assets/images/countries/brazil.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "South Africa",
+      "asset": "assets/images/countries/south-africa.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Egypt",
+      "asset": "assets/images/countries/egypt.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Mexico",
+      "asset": "assets/images/countries/mexico.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Singapore",
+      "asset": "assets/images/countries/singapore.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Portugal",
+      "asset": "assets/images/countries/portugal.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Norway",
+      "asset": "assets/images/countries/norway.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Austria",
+      "asset": "assets/images/countries/austria.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Netherlands",
+      "asset": "assets/images/countries/netherlands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Germany",
+      "asset": "assets/images/countries/germany.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "India",
+      "asset": "assets/images/countries/india.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "China",
+      "asset": "assets/images/countries/china.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "South Korea",
+      "asset": "assets/images/countries/south-korea.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Vietnam",
+      "asset": "assets/images/countries/vietnam.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Argentina",
+      "asset": "assets/images/countries/argentina.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Chile",
+      "asset": "assets/images/countries/chile.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Peru",
+      "asset": "assets/images/countries/peru.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Kenya",
+      "asset": "assets/images/countries/kenya.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Tanzania",
+      "asset": "assets/images/countries/tanzania.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Seychelles",
+      "asset": "assets/images/countries/seychelles.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Mauritius",
+      "asset": "assets/images/countries/mauritius.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Qatar",
+      "asset": "assets/images/countries/qatar.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Afghanistan",
+      "asset": "assets/images/countries/afghanistan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Albania",
+      "asset": "assets/images/countries/albania.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Algeria",
+      "asset": "assets/images/countries/algeria.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "American Samoa",
+      "asset": "assets/images/countries/american-samoa.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Andorra",
+      "asset": "assets/images/countries/andorra.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Angola",
+      "asset": "assets/images/countries/angola.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Anguilla",
+      "asset": "assets/images/countries/anguilla.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Antarctica",
+      "asset": "assets/images/countries/antarctica.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Antigua and Barbuda",
+      "asset": "assets/images/countries/antigua-and-barbuda.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Armenia",
+      "asset": "assets/images/countries/armenia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Aruba",
+      "asset": "assets/images/countries/aruba.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Azerbaijan",
+      "asset": "assets/images/countries/azerbaijan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Bahamas",
+      "asset": "assets/images/countries/bahamas.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Bahrain",
+      "asset": "assets/images/countries/bahrain.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Bangladesh",
+      "asset": "assets/images/countries/bangladesh.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Barbados",
+      "asset": "assets/images/countries/barbados.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Belarus",
+      "asset": "assets/images/countries/belarus.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Belgium",
+      "asset": "assets/images/countries/belgium.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Belize",
+      "asset": "assets/images/countries/belize.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Benin",
+      "asset": "assets/images/countries/benin.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Bermuda",
+      "asset": "assets/images/countries/bermuda.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Bhutan",
+      "asset": "assets/images/countries/bhutan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Bolivia",
+      "asset": "assets/images/countries/bolivia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "asset": "assets/images/countries/bosnia-and-herzegovina.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Botswana",
+      "asset": "assets/images/countries/botswana.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Bouvet Island",
+      "asset": "assets/images/countries/bouvet-island.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "British Indian Ocean Territory",
+      "asset": "assets/images/countries/british-indian-ocean-territory.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "British Virgin Islands",
+      "asset": "assets/images/countries/british-virgin-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Brunei",
+      "asset": "assets/images/countries/brunei.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Bulgaria",
+      "asset": "assets/images/countries/bulgaria.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Burkina Faso",
+      "asset": "assets/images/countries/burkina-faso.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Burundi",
+      "asset": "assets/images/countries/burundi.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Cambodia",
+      "asset": "assets/images/countries/cambodia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Cameroon",
+      "asset": "assets/images/countries/cameroon.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Cape Verde",
+      "asset": "assets/images/countries/cape-verde.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Caribbean Netherlands",
+      "asset": "assets/images/countries/caribbean-netherlands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Cayman Islands",
+      "asset": "assets/images/countries/cayman-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Central African Republic",
+      "asset": "assets/images/countries/central-african-republic.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Chad",
+      "asset": "assets/images/countries/chad.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Christmas Island",
+      "asset": "assets/images/countries/christmas-island.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Cocos (Keeling) Islands",
+      "asset": "assets/images/countries/cocos-keeling-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Colombia",
+      "asset": "assets/images/countries/colombia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Comoros",
+      "asset": "assets/images/countries/comoros.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Cook Islands",
+      "asset": "assets/images/countries/cook-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Costa Rica",
+      "asset": "assets/images/countries/costa-rica.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Croatia",
+      "asset": "assets/images/countries/croatia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Cuba",
+      "asset": "assets/images/countries/cuba.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Curaçao",
+      "asset": "assets/images/countries/curacao.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Cyprus",
+      "asset": "assets/images/countries/cyprus.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Czechia",
+      "asset": "assets/images/countries/czechia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "DR Congo",
+      "asset": "assets/images/countries/dr-congo.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Denmark",
+      "asset": "assets/images/countries/denmark.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Djibouti",
+      "asset": "assets/images/countries/djibouti.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Dominica",
+      "asset": "assets/images/countries/dominica.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Dominican Republic",
+      "asset": "assets/images/countries/dominican-republic.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Ecuador",
+      "asset": "assets/images/countries/ecuador.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "El Salvador",
+      "asset": "assets/images/countries/el-salvador.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Equatorial Guinea",
+      "asset": "assets/images/countries/equatorial-guinea.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Eritrea",
+      "asset": "assets/images/countries/eritrea.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Estonia",
+      "asset": "assets/images/countries/estonia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Eswatini",
+      "asset": "assets/images/countries/eswatini.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Ethiopia",
+      "asset": "assets/images/countries/ethiopia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Falkland Islands",
+      "asset": "assets/images/countries/falkland-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Faroe Islands",
+      "asset": "assets/images/countries/faroe-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Fiji",
+      "asset": "assets/images/countries/fiji.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Finland",
+      "asset": "assets/images/countries/finland.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "French Guiana",
+      "asset": "assets/images/countries/french-guiana.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "French Polynesia",
+      "asset": "assets/images/countries/french-polynesia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "French Southern and Antarctic Lands",
+      "asset": "assets/images/countries/french-southern-and-antarctic-lands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Gabon",
+      "asset": "assets/images/countries/gabon.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Gambia",
+      "asset": "assets/images/countries/gambia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Georgia",
+      "asset": "assets/images/countries/georgia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Ghana",
+      "asset": "assets/images/countries/ghana.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Gibraltar",
+      "asset": "assets/images/countries/gibraltar.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Greenland",
+      "asset": "assets/images/countries/greenland.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Grenada",
+      "asset": "assets/images/countries/grenada.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Guadeloupe",
+      "asset": "assets/images/countries/guadeloupe.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Guam",
+      "asset": "assets/images/countries/guam.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Guatemala",
+      "asset": "assets/images/countries/guatemala.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Guernsey",
+      "asset": "assets/images/countries/guernsey.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Guinea",
+      "asset": "assets/images/countries/guinea.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Guinea-Bissau",
+      "asset": "assets/images/countries/guinea-bissau.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Guyana",
+      "asset": "assets/images/countries/guyana.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Haiti",
+      "asset": "assets/images/countries/haiti.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Heard Island and McDonald Islands",
+      "asset": "assets/images/countries/heard-island-and-mcdonald-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Honduras",
+      "asset": "assets/images/countries/honduras.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Hong Kong",
+      "asset": "assets/images/countries/hong-kong.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Hungary",
+      "asset": "assets/images/countries/hungary.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Iran",
+      "asset": "assets/images/countries/iran.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Iraq",
+      "asset": "assets/images/countries/iraq.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Ireland",
+      "asset": "assets/images/countries/ireland.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Isle of Man",
+      "asset": "assets/images/countries/isle-of-man.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Israel",
+      "asset": "assets/images/countries/israel.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Ivory Coast",
+      "asset": "assets/images/countries/ivory-coast.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Jamaica",
+      "asset": "assets/images/countries/jamaica.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Jersey",
+      "asset": "assets/images/countries/jersey.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Jordan",
+      "asset": "assets/images/countries/jordan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Kazakhstan",
+      "asset": "assets/images/countries/kazakhstan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Kiribati",
+      "asset": "assets/images/countries/kiribati.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Kosovo",
+      "asset": "assets/images/countries/kosovo.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Kuwait",
+      "asset": "assets/images/countries/kuwait.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Kyrgyzstan",
+      "asset": "assets/images/countries/kyrgyzstan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Laos",
+      "asset": "assets/images/countries/laos.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Latvia",
+      "asset": "assets/images/countries/latvia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Lebanon",
+      "asset": "assets/images/countries/lebanon.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Lesotho",
+      "asset": "assets/images/countries/lesotho.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Liberia",
+      "asset": "assets/images/countries/liberia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Libya",
+      "asset": "assets/images/countries/libya.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Liechtenstein",
+      "asset": "assets/images/countries/liechtenstein.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Lithuania",
+      "asset": "assets/images/countries/lithuania.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Luxembourg",
+      "asset": "assets/images/countries/luxembourg.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Macau",
+      "asset": "assets/images/countries/macau.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Madagascar",
+      "asset": "assets/images/countries/madagascar.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Malawi",
+      "asset": "assets/images/countries/malawi.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Malaysia",
+      "asset": "assets/images/countries/malaysia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Mali",
+      "asset": "assets/images/countries/mali.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Malta",
+      "asset": "assets/images/countries/malta.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Marshall Islands",
+      "asset": "assets/images/countries/marshall-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Martinique",
+      "asset": "assets/images/countries/martinique.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Mauritania",
+      "asset": "assets/images/countries/mauritania.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Mayotte",
+      "asset": "assets/images/countries/mayotte.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Micronesia",
+      "asset": "assets/images/countries/micronesia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Moldova",
+      "asset": "assets/images/countries/moldova.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Monaco",
+      "asset": "assets/images/countries/monaco.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Mongolia",
+      "asset": "assets/images/countries/mongolia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Montenegro",
+      "asset": "assets/images/countries/montenegro.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Montserrat",
+      "asset": "assets/images/countries/montserrat.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Mozambique",
+      "asset": "assets/images/countries/mozambique.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Myanmar",
+      "asset": "assets/images/countries/myanmar.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Namibia",
+      "asset": "assets/images/countries/namibia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Nauru",
+      "asset": "assets/images/countries/nauru.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Nepal",
+      "asset": "assets/images/countries/nepal.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "New Caledonia",
+      "asset": "assets/images/countries/new-caledonia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Nicaragua",
+      "asset": "assets/images/countries/nicaragua.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Niger",
+      "asset": "assets/images/countries/niger.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Nigeria",
+      "asset": "assets/images/countries/nigeria.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Niue",
+      "asset": "assets/images/countries/niue.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Norfolk Island",
+      "asset": "assets/images/countries/norfolk-island.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "North Korea",
+      "asset": "assets/images/countries/north-korea.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "North Macedonia",
+      "asset": "assets/images/countries/north-macedonia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Northern Mariana Islands",
+      "asset": "assets/images/countries/northern-mariana-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Oman",
+      "asset": "assets/images/countries/oman.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Pakistan",
+      "asset": "assets/images/countries/pakistan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Palau",
+      "asset": "assets/images/countries/palau.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Palestine",
+      "asset": "assets/images/countries/palestine.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Panama",
+      "asset": "assets/images/countries/panama.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Papua New Guinea",
+      "asset": "assets/images/countries/papua-new-guinea.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Paraguay",
+      "asset": "assets/images/countries/paraguay.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Philippines",
+      "asset": "assets/images/countries/philippines.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Pitcairn Islands",
+      "asset": "assets/images/countries/pitcairn-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Poland",
+      "asset": "assets/images/countries/poland.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Puerto Rico",
+      "asset": "assets/images/countries/puerto-rico.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Republic of the Congo",
+      "asset": "assets/images/countries/republic-of-the-congo.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Romania",
+      "asset": "assets/images/countries/romania.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Russia",
+      "asset": "assets/images/countries/russia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Rwanda",
+      "asset": "assets/images/countries/rwanda.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Réunion",
+      "asset": "assets/images/countries/reunion.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Saint Barthélemy",
+      "asset": "assets/images/countries/saint-barthelemy.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Saint Helena, Ascension and Tristan da Cunha",
+      "asset": "assets/images/countries/saint-helena-ascension-and-tristan-da-cunha.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "asset": "assets/images/countries/saint-kitts-and-nevis.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Saint Lucia",
+      "asset": "assets/images/countries/saint-lucia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Saint Martin",
+      "asset": "assets/images/countries/saint-martin.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Saint Pierre and Miquelon",
+      "asset": "assets/images/countries/saint-pierre-and-miquelon.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "asset": "assets/images/countries/saint-vincent-and-the-grenadines.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Samoa",
+      "asset": "assets/images/countries/samoa.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "San Marino",
+      "asset": "assets/images/countries/san-marino.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Saudi Arabia",
+      "asset": "assets/images/countries/saudi-arabia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Senegal",
+      "asset": "assets/images/countries/senegal.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Serbia",
+      "asset": "assets/images/countries/serbia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Sierra Leone",
+      "asset": "assets/images/countries/sierra-leone.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Sint Maarten",
+      "asset": "assets/images/countries/sint-maarten.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Slovakia",
+      "asset": "assets/images/countries/slovakia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Slovenia",
+      "asset": "assets/images/countries/slovenia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Solomon Islands",
+      "asset": "assets/images/countries/solomon-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Somalia",
+      "asset": "assets/images/countries/somalia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "South Georgia",
+      "asset": "assets/images/countries/south-georgia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "South Sudan",
+      "asset": "assets/images/countries/south-sudan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Sri Lanka",
+      "asset": "assets/images/countries/sri-lanka.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Sudan",
+      "asset": "assets/images/countries/sudan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Suriname",
+      "asset": "assets/images/countries/suriname.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Svalbard and Jan Mayen",
+      "asset": "assets/images/countries/svalbard-and-jan-mayen.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Sweden",
+      "asset": "assets/images/countries/sweden.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Syria",
+      "asset": "assets/images/countries/syria.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "São Tomé and Príncipe",
+      "asset": "assets/images/countries/sao-tome-and-principe.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Taiwan",
+      "asset": "assets/images/countries/taiwan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Tajikistan",
+      "asset": "assets/images/countries/tajikistan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Timor-Leste",
+      "asset": "assets/images/countries/timor-leste.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Togo",
+      "asset": "assets/images/countries/togo.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Tokelau",
+      "asset": "assets/images/countries/tokelau.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Tonga",
+      "asset": "assets/images/countries/tonga.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "asset": "assets/images/countries/trinidad-and-tobago.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Tunisia",
+      "asset": "assets/images/countries/tunisia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Turkmenistan",
+      "asset": "assets/images/countries/turkmenistan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Turks and Caicos Islands",
+      "asset": "assets/images/countries/turks-and-caicos-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Tuvalu",
+      "asset": "assets/images/countries/tuvalu.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Uganda",
+      "asset": "assets/images/countries/uganda.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Ukraine",
+      "asset": "assets/images/countries/ukraine.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "United States Minor Outlying Islands",
+      "asset": "assets/images/countries/united-states-minor-outlying-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "United States Virgin Islands",
+      "asset": "assets/images/countries/united-states-virgin-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Uruguay",
+      "asset": "assets/images/countries/uruguay.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Uzbekistan",
+      "asset": "assets/images/countries/uzbekistan.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Vanuatu",
+      "asset": "assets/images/countries/vanuatu.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Vatican City",
+      "asset": "assets/images/countries/vatican-city.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Venezuela",
+      "asset": "assets/images/countries/venezuela.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Wallis and Futuna",
+      "asset": "assets/images/countries/wallis-and-futuna.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Western Sahara",
+      "asset": "assets/images/countries/western-sahara.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Yemen",
+      "asset": "assets/images/countries/yemen.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Zambia",
+      "asset": "assets/images/countries/zambia.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Zimbabwe",
+      "asset": "assets/images/countries/zimbabwe.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    },
+    {
+      "country": "Åland Islands",
+      "asset": "assets/images/countries/aland-islands.webp",
+      "source": "Bundled local WebP generated from Wikimedia Commons/Wikivoyage thumbnail when available, or fallback cover if source lookup failed during generation.",
+      "license": "Reusable Wikimedia Commons license where applicable; fallback covers generated for demo use."
+    }
+  ]
+}

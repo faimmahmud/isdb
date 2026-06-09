@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | Open AI x World AI</title>
+  <meta name="description" content="Luxury tourism booking page with availability check, travel timeline, and premium reservation form." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-booking">
+
+<nav class="navbar navbar-expand-lg navbar-dark royal-nav sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="index.html">
+      <span class="brand-mark"></span>
+      <span><strong>Open AI x World AI</strong><small>Booking Studio</small></span>
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav3"><span class="navbar-toggler-icon"></span></button>
+    <div id="nav3" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-2 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="booking-hero">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-7 reveal">
+        <p class="section-kicker">Instant Booking</p>
+        <h1 class="page-title">Reserve Your Royal Journey</h1>
+        <p class="page-text">
+          This page is intentionally different: darker hero, sharper layout, and a more functional booking flow.
+        </p>
+
+        <div class="booking-timeline">
+          <div class="timeline-step"><span>1</span><div><h3>Choose Route</h3><p>Pick a destination and travel style.</p></div></div>
+          <div class="timeline-step"><span>2</span><div><h3>Select Dates</h3><p>Use your preferred trip window.</p></div></div>
+          <div class="timeline-step"><span>3</span><div><h3>Confirm Guests</h3><p>Set travelers for the itinerary.</p></div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 reveal">
+        <aside class="booking-card">
+          <h2>Check Availability</h2>
+          <form id="bookingForm" action="#" method="post">
+            <input class="form-control mb-3" type="text" name="destination" placeholder="Destination" required>
+            <input class="form-control mb-3" type="date" name="date" required>
+            <input class="form-control mb-3" type="number" name="guests" placeholder="Guests" min="1" value="2" required>
+            <select class="form-select mb-3" name="style">
+              <option>Luxury Adventure</option>
+              <option>Culture Focus</option>
+              <option>Relaxation</option>
+              <option>Family Package</option>
+            </select>
+            <button class="btn btn-emerald w-100" type="submit">Check Now</button>
+          </form>
+
+          <div class="mini-map mt-4">
+            <strong>Route Preview</strong>
+            <svg viewBox="0 0 600 260" class="mt-2">
+              <rect width="600" height="260" rx="22" fill="#eef1e5"></rect>
+              <path d="M60 190 C150 50, 220 220, 310 120 S470 40, 540 180" fill="none" stroke="#064e3b" stroke-width="8" stroke-linecap="round"/>
+              <circle cx="60" cy="190" r="10" fill="#475569"></circle>
+              <circle cx="310" cy="120" r="10" fill="#064e3b"></circle>
+              <circle cx="540" cy="180" r="10" fill="#475569"></circle>
+            </svg>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section-pad soft-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-kicker">Service Flow</div>
+        <h2>How Booking Works</h2>
+      </div>
+    </div>
+
+    <div class="booking-steps-grid">
+      <div class="booking-step reveal">
+        <span>01</span>
+        <h3>Request</h3>
+        <p>Submit your destination and guest details.</p>
+      </div>
+      <div class="booking-step reveal">
+        <span>02</span>
+        <h3>Review</h3>
+        <p>We generate a premium trip summary.</p>
+      </div>
+      <div class="booking-step reveal">
+        <span>03</span>
+        <h3>Confirm</h3>
+        <p>Finalize the journey with support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-royal">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <span>Open AI x World AI</span>
+    <span>Booking Architecture Page</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
